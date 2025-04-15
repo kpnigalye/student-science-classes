@@ -42,12 +42,16 @@ export default function Index() {
     {
       title: "NEET (National Eligibility cum Entrance Test)",
       description: "Medical entrance examination for MBBS and BDS courses",
-      link: "/neet"
+      link: "/neet",
+      icon: Microscope,
+      color: "from-purple-50 to-pink-50 border-purple-100 hover:border-purple-300"
     },
     {
       title: "JEE (Joint Entrance Examination)",
       description: "Engineering entrance examination for IITs and NITs",
-      link: "/jee"
+      link: "/jee",
+      icon: Calculator,
+      color: "from-blue-50 to-cyan-50 border-blue-100 hover:border-blue-300"
     }
   ];
 
@@ -87,31 +91,48 @@ export default function Index() {
         </div>
       </section>
 
-      {/* Courses Section */}
+      {/* Courses Section - Enhanced Design */}
       <section className="py-16 px-4 bg-gray-50">
         <div className="container mx-auto">
-          <h2 className="text-3xl font-bold text-center mb-12 text-blue-900">Our Courses</h2>
+          <h2 className="text-3xl font-bold text-center text-blue-900 relative">
+            <span className="relative z-10">Our Courses</span>
+            <span className="absolute inset-x-0 bottom-0 h-1 bg-gradient-to-r from-blue-400 to-purple-400 transform -translate-y-2"></span>
+          </h2>
+          <p className="text-center text-gray-600 max-w-3xl mx-auto mt-4 mb-12">
+            Choose from our specialized programs designed to help students excel in both board exams and competitive entrances
+          </p>
+          
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
             {courses.map((course, index) => (
-              <Card key={index} className="border-2 border-blue-100">
-                <CardHeader>
+              <Card key={index} className="border-2 border-blue-100 hover:shadow-lg transition-all duration-300 overflow-hidden">
+                <CardHeader className="bg-gradient-to-r from-blue-50 to-indigo-50 pb-3">
                   <CardTitle className="text-xl font-bold text-blue-900">{course.title}</CardTitle>
                 </CardHeader>
-                <CardContent>
-                  <p className="mb-4 text-gray-600">{course.description}</p>
-                  <div className="space-y-2 text-sm">
-                    <p className="flex items-center text-gray-700">
-                      <Clock className="w-4 h-4 mr-2 text-blue-600" />
-                      {course.timing.split('\n').map((time, i) => (
-                        <span key={i} className="block">{time}</span>
-                      ))}
-                    </p>
-                    <p className="flex items-center text-gray-700">
-                      <BookOpen className="w-4 h-4 mr-2 text-blue-600" /> {course.subjects}
-                    </p>
-                    <p className="flex items-center text-gray-700">
-                      <Target className="w-4 h-4 mr-2 text-blue-600" /> Duration: {course.duration}
-                    </p>
+                <CardContent className="pt-5">
+                  <p className="mb-4 text-gray-600 border-l-4 border-blue-400 pl-3 italic">{course.description}</p>
+                  <div className="space-y-4 text-sm">
+                    <div className="bg-white p-3 rounded-lg shadow-sm">
+                      <p className="flex items-start gap-2 text-gray-700">
+                        <Clock className="w-5 h-5 text-blue-600 flex-shrink-0 mt-0.5" />
+                        <span>
+                          {course.timing.split('\n').map((time, i) => (
+                            <span key={i} className="block font-medium">{time}</span>
+                          ))}
+                        </span>
+                      </p>
+                    </div>
+                    <div className="bg-white p-3 rounded-lg shadow-sm">
+                      <p className="flex items-start gap-2 text-gray-700">
+                        <BookOpen className="w-5 h-5 text-blue-600 flex-shrink-0 mt-0.5" /> 
+                        <span className="font-medium">{course.subjects}</span>
+                      </p>
+                    </div>
+                    <div className="bg-white p-3 rounded-lg shadow-sm">
+                      <p className="flex items-start gap-2 text-gray-700">
+                        <Target className="w-5 h-5 text-blue-600 flex-shrink-0 mt-0.5" /> 
+                        <span className="font-medium">Duration: {course.duration}</span>
+                      </p>
+                    </div>
                   </div>
                 </CardContent>
               </Card>
@@ -120,19 +141,37 @@ export default function Index() {
         </div>
       </section>
 
-      {/* Entrance Exams Section */}
+      {/* Entrance Exams Section - Enhanced Design */}
       <section className="py-16 px-4 bg-white">
         <div className="container mx-auto">
-          <h2 className="text-3xl font-bold text-center mb-12 text-blue-900">Entrance Exam Preparation</h2>
+          <h2 className="text-3xl font-bold text-center text-blue-900 relative">
+            <span className="relative z-10">Entrance Exam Preparation</span>
+            <span className="absolute inset-x-0 bottom-0 h-1 bg-gradient-to-r from-blue-400 to-purple-400 transform -translate-y-2"></span>
+          </h2>
+          <p className="text-center text-gray-600 max-w-3xl mx-auto mt-4 mb-12">
+            Specialized coaching for national-level competitive examinations with proven results
+          </p>
+          
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
             {entranceExams.map((exam, index) => (
-              <Link key={index} to={exam.link}>
-                <Card className="border-2 border-blue-100 hover:border-blue-500 transition-colors h-full">
-                  <CardHeader>
-                    <CardTitle className="text-xl font-bold text-blue-900">{exam.title}</CardTitle>
+              <Link key={index} to={exam.link} className="block transform hover:scale-105 transition-transform duration-300">
+                <Card className={`border-2 bg-gradient-to-r ${exam.color} transition-all duration-300 h-full shadow`}>
+                  <CardHeader className="pb-3">
+                    <div className="flex items-center gap-3">
+                      <div className="w-12 h-12 rounded-full bg-white flex items-center justify-center shadow-sm">
+                        <exam.icon className="w-6 h-6 text-blue-600" />
+                      </div>
+                      <CardTitle className="text-xl font-bold text-blue-900">{exam.title}</CardTitle>
+                    </div>
                   </CardHeader>
-                  <CardContent>
+                  <CardContent className="pt-4">
                     <p className="text-gray-600">{exam.description}</p>
+                    <div className="mt-4 text-blue-600 font-medium flex items-center gap-1">
+                      Learn more
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="ml-1">
+                        <path d="m9 18 6-6-6-6"/>
+                      </svg>
+                    </div>
                   </CardContent>
                 </Card>
               </Link>
