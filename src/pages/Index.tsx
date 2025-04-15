@@ -2,6 +2,7 @@
 import { GraduationCap, Users, BookOpen, Target, Clock, Award, BrainCircuit, BadgeCheck } from "lucide-react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import Logo from "@/components/Logo";
+import { Link } from "react-router-dom";
 
 export default function Index() {
   const whyChooseUs = [
@@ -16,22 +17,38 @@ export default function Index() {
   const courses = [
     {
       title: "XI + XII + Entrance Batch (NEET/JEE)",
-      description: "Comprehensive program covering NEET/JEE preparation with board syllabus",
-      timing: "7:00-11:00 AM, 5:00-9:00 PM",
-      subjects: "Physics, Chemistry, Biology/Maths",
+      description: "Integrated program for Board & Competitive exam preparation",
+      timing: "Morning Batch: 7:00 AM - 10:00 AM\nEvening Batch: 5:00 PM - 8:00 PM",
+      subjects: "Physics, Chemistry, Biology/Mathematics",
+      duration: "2 Years"
     },
     {
-      title: "XI + XII + MHT-CET Batch",
-      description: "Specialized coaching for MHT-CET and board exams",
-      timing: "7:00-11:00 AM, 5:00-9:00 PM",
-      subjects: "Physics, Chemistry, Mathematics, Biology",
+      title: "XII + Dropper Batch (NEET/JEE)",
+      description: "Special batch for students after XII for competitive exams",
+      timing: "Morning Batch: 8:00 AM - 1:00 PM\nEvening Batch: 2:00 PM - 7:00 PM",
+      subjects: "Physics, Chemistry, Biology/Mathematics",
+      duration: "1 Year"
     },
     {
-      title: "XI + XII State Board Batch",
-      description: "Focused preparation for State Board examinations",
-      timing: "6:45-9:00 PM",
-      subjects: "Physics, Chemistry, Mathematics, Biology",
+      title: "XI + XII State Board",
+      description: "Focus on State Board curriculum and exam preparation",
+      timing: "Morning Batch: 7:00 AM - 9:00 AM\nEvening Batch: 6:00 PM - 8:00 PM",
+      subjects: "Physics, Chemistry, Biology/Mathematics",
+      duration: "2 Years"
+    }
+  ];
+
+  const entranceExams = [
+    {
+      title: "NEET (National Eligibility cum Entrance Test)",
+      description: "Medical entrance examination for MBBS and BDS courses",
+      link: "/neet"
     },
+    {
+      title: "JEE (Joint Entrance Examination)",
+      description: "Engineering entrance examination for IITs and NITs",
+      link: "/jee"
+    }
   ];
 
   return (
@@ -84,14 +101,41 @@ export default function Index() {
                   <p className="mb-4 text-gray-600">{course.description}</p>
                   <div className="space-y-2 text-sm">
                     <p className="flex items-center text-gray-700">
-                      <Clock className="w-4 h-4 mr-2 text-blue-600" /> {course.timing}
+                      <Clock className="w-4 h-4 mr-2 text-blue-600" />
+                      {course.timing.split('\n').map((time, i) => (
+                        <span key={i} className="block">{time}</span>
+                      ))}
                     </p>
                     <p className="flex items-center text-gray-700">
                       <BookOpen className="w-4 h-4 mr-2 text-blue-600" /> {course.subjects}
                     </p>
+                    <p className="flex items-center text-gray-700">
+                      <Target className="w-4 h-4 mr-2 text-blue-600" /> Duration: {course.duration}
+                    </p>
                   </div>
                 </CardContent>
               </Card>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Entrance Exams Section */}
+      <section className="py-16 px-4 bg-white">
+        <div className="container mx-auto">
+          <h2 className="text-3xl font-bold text-center mb-12 text-blue-900">Entrance Exam Preparation</h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+            {entranceExams.map((exam, index) => (
+              <Link key={index} to={exam.link}>
+                <Card className="border-2 border-blue-100 hover:border-blue-500 transition-colors h-full">
+                  <CardHeader>
+                    <CardTitle className="text-xl font-bold text-blue-900">{exam.title}</CardTitle>
+                  </CardHeader>
+                  <CardContent>
+                    <p className="text-gray-600">{exam.description}</p>
+                  </CardContent>
+                </Card>
+              </Link>
             ))}
           </div>
         </div>
