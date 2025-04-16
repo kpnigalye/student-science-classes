@@ -131,12 +131,6 @@ export default function Index() {
                         <Target className="w-4 h-4 text-blue-600 mt-1 flex-shrink-0" />
                         <span>Duration: {course.duration}</span>
                       </p>
-                      {course.focus && (
-                        <p className="flex items-start gap-2">
-                          <BrainCircuit className="w-4 h-4 text-blue-600 mt-1 flex-shrink-0" />
-                          <span>{course.focus}</span>
-                        </p>
-                      )}
                     </div>
                   </div>
                 </CardContent>
