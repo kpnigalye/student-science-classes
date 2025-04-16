@@ -2,6 +2,7 @@ import { GraduationCap, Users, BookOpen, Target, Clock, Award, BrainCircuit, Bad
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import Logo from "@/components/Logo";
 import { Link } from "react-router-dom";
+import { CareerOptionsSection } from "@/components/CareerOptionsSection";
 
 export default function Index() {
   const whyChooseUs = [
@@ -156,6 +157,8 @@ export default function Index() {
           </div>
         </div>
       </section>
+
+      <CareerOptionsSection />
 
       <footer className="bg-blue-900 text-white py-8">
         <div className="container mx-auto px-4 text-center">
