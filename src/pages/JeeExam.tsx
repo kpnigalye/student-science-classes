@@ -246,52 +246,6 @@ export default function JeeExam() {
             <Card className="border-2 border-blue-100 shadow-md hover:shadow-lg transition-shadow">
               <CardHeader className="bg-gradient-to-r from-blue-50 to-orange-50">
                 <div className="flex items-center gap-3">
-                  <Award className="w-6 h-6 text-orange-600" />
-                  <CardTitle className="text-xl text-blue-900">Important Topics</CardTitle>
-                </div>
-              </CardHeader>
-              <CardContent className="pt-6">
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-                  <div className="space-y-2">
-                    <h4 className="font-semibold text-blue-800 border-b border-blue-100 pb-2">Physics</h4>
-                    <ul className="space-y-1 text-gray-700">
-                      <li>• Mechanics</li>
-                      <li>• Electrodynamics</li>
-                      <li>• Modern Physics</li>
-                      <li>• Thermodynamics & Kinetic Theory</li>
-                      <li>• Optics & Wave Optics</li>
-                      <li>• Rotational Dynamics</li>
-                    </ul>
-                  </div>
-                  <div className="space-y-2">
-                    <h4 className="font-semibold text-green-800 border-b border-green-100 pb-2">Chemistry</h4>
-                    <ul className="space-y-1 text-gray-700">
-                      <li>• Organic Chemistry</li>
-                      <li>• Inorganic Chemistry</li>
-                      <li>• Physical Chemistry</li>
-                      <li>• Coordination Compounds</li>
-                      <li>• Chemical Bonding</li>
-                      <li>• Equilibrium</li>
-                    </ul>
-                  </div>
-                  <div className="space-y-2">
-                    <h4 className="font-semibold text-orange-800 border-b border-orange-100 pb-2">Mathematics</h4>
-                    <ul className="space-y-1 text-gray-700">
-                      <li>• Calculus</li>
-                      <li>• Coordinate Geometry</li>
-                      <li>• Algebra</li>
-                      <li>• Vectors & 3D Geometry</li>
-                      <li>• Probability</li>
-                      <li>• Trigonometry</li>
-                    </ul>
-                  </div>
-                </div>
-              </CardContent>
-            </Card>
-
-            <Card className="border-2 border-blue-100 shadow-md hover:shadow-lg transition-shadow">
-              <CardHeader className="bg-gradient-to-r from-blue-50 to-purple-50">
-                <div className="flex items-center gap-3">
                   <Building className="w-6 h-6 text-purple-600" />
                   <CardTitle className="text-xl text-blue-900">Top IITs in India</CardTitle>
                 </div>
