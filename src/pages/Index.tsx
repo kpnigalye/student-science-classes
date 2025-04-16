@@ -18,7 +18,7 @@ export default function Index() {
       title: "XI + XII + NEET/JEE",
       description: "Integrated program for Board & NEET/JEE exam preparation",
       timing: "Morning Batch: 7:00 AM - 10:00 AM\nEvening Batch: 5:00 PM - 8:00 PM",
-      subjects: "Physics, Chemistry, Biology/Mathematics",
+      subjects: "Physics, Chemistry, Mathematics(for JEE), Biology (For NEET)",
       duration: "2 Years"
     },
     {
@@ -32,7 +32,7 @@ export default function Index() {
       title: "XI + XII",
       description: "Focus on State Board curriculum and exam preparation",
       timing: "Morning Batch: 7:00 AM - 9:00 AM\nEvening Batch: 6:00 PM - 8:00 PM",
-      subjects: "Physics, Chemistry, Biology/Mathematics",
+      subjects: "Physics, Chemistry, Mathematics, Biology",
       duration: "2 Years"
     }
   ];
@@ -46,7 +46,7 @@ export default function Index() {
     },
     {
       title: "JEE",
-      subtitle: "Joint Entrance Examination",
+      subtitle: "Joint Entrance Examination (Mains + Advanced)",
       description: "Engineering Entrance Examination",
       link: "/jee"
     },
@@ -160,9 +160,9 @@ export default function Index() {
       <footer className="bg-blue-900 text-white py-8">
         <div className="container mx-auto px-4 text-center">
           <h3 className="text-xl font-bold mb-4">Contact Us</h3>
-          <p className="mb-2">📧 info@studentscienceclasses.com</p>
-          <p className="mb-2">📞 +91 98765 43210</p>
-          <p>🏢 Science City Road, Near Metro Station, Mumbai - 400001</p>
+          <p className="mb-2">📧 studentsclasseschembur@gmail.com</p>
+          <p className="mb-2">📞 +91 8097740318 / +91 9136596326</p>
+          <p>🏢 First floor, Rajashri building, N.G. Acharya Road, Near Royal Orchid hotel, Chembur (E), Mumbai - 400071</p>
         </div>
       </footer>
     </div>
