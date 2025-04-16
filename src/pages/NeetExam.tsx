@@ -27,7 +27,7 @@ export default function NeetExam() {
       <main className="container mx-auto py-8 px-4">
         <div className="max-w-4xl mx-auto space-y-10">
           <div className="text-center">
-            <h1 className="text-3xl md:text-4xl font-bold text-blue-900 mb-4">NEET Exam Details</h1>
+            <h1 className="text-3xl md:text-4xl font-bold text-blue-900 mb-4">National Eligibility cum Entrance Test (NEET)</h1>
             <p className="text-gray-600 max-w-2xl mx-auto">
               The National Eligibility cum Entrance Test (NEET) is the qualifying entrance exam for MBBS and BDS programs in Indian medical and dental colleges.
             </p>
