@@ -1,6 +1,7 @@
-import { Users, BookOpen, Target, Clock, Award, BrainCircuit, BadgeCheck, GraduationCap } from "lucide-react";
+
+import { GraduationCap, Users, BookOpen, Target, Clock, Award, BrainCircuit, BadgeCheck } from "lucide-react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import HeaderWithLogos from "@/components/HeaderWithLogos";
+import Logo from "@/components/Logo";
 import { Link } from "react-router-dom";
 
 export default function Index() {
@@ -15,21 +16,21 @@ export default function Index() {
 
   const courses = [
     {
-      title: "XI + XII + NEET/JEE",
+      title: "XI + XII + Entrance Batch (NEET/JEE)",
       description: "Integrated program for Board & NEET/JEE exam preparation",
       timing: "Morning Batch: 7:00 AM - 10:00 AM\nEvening Batch: 5:00 PM - 8:00 PM",
       subjects: "Physics, Chemistry, Biology/Mathematics",
       duration: "2 Years"
     },
     {
-      title: "XI + XII + MHT-CET",
+      title: "XI + XII + MHT-CET Batch",
       description: "Integrated program for Board & MHT-CET exam preparation",
       timing: "Morning Batch: 7:00 AM - 11:00 AM\nEvening Batch: 5:00 PM - 9:00 PM",
       subjects: "Physics, Chemistry, Mathematics, Biology",
       duration: "2 Years"
     },
     {
-      title: "XI + XII",
+      title: "XI + XII State Board",
       description: "Focus on State Board curriculum and exam preparation",
       timing: "Morning Batch: 7:00 AM - 9:00 AM\nEvening Batch: 6:00 PM - 8:00 PM",
       subjects: "Physics, Chemistry, Biology/Mathematics",
@@ -62,13 +63,22 @@ export default function Index() {
     <div className="min-h-screen bg-gradient-to-b from-[#f8f9fa] to-white">
       {/* Header with Logo */}
       <header className="py-6 px-4 bg-white shadow-sm">
-        <HeaderWithLogos />
+        <Logo />
       </header>
 
-      {/* Hero Section - Remove since we're using the logo in header */}
+      {/* Hero Section */}
+      <section className="py-16 px-4 bg-gradient-to-r from-blue-900 to-blue-700 text-white">
+        <div className="container mx-auto text-center">
+          <GraduationCap className="w-16 h-16 mx-auto mb-6" />
+          <h1 className="text-4xl md:text-5xl font-bold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-yellow-200 to-yellow-400">
+            Celebrating 45th Year of Excellence
+          </h1>
+        </div>
+      </section>
+
+      {/* Why Choose Us Section */}
       <section className="py-16 px-4">
         <div className="container mx-auto">
-          {/* WhyChooseUs section starts here */}
           <h2 className="text-3xl font-bold text-center mb-12 text-blue-900">Why Choose Us?</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {whyChooseUs.map((item, index) => (
@@ -98,7 +108,7 @@ export default function Index() {
                 <CardHeader>
                   <div className="flex items-center gap-3">
                     <BookOpen className="w-6 h-6 text-green-600 flex-shrink-0" />
-                    <CardTitle className="text-xl text-blue-900">{course.title}</CardTitle>
+                    <CardTitle className="text-lg text-blue-900">{course.title}</CardTitle>
                   </div>
                 </CardHeader>
                 <CardContent>

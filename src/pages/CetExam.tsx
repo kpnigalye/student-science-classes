@@ -1,5 +1,6 @@
+
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import HeaderWithLogos from "@/components/HeaderWithLogos";
+import Logo from "@/components/Logo";
 import { Link } from "react-router-dom";
 import { BookOpen, Award, GraduationCap, Building, Target, Users, Percent } from "lucide-react";
 import { Breadcrumb, BreadcrumbItem, BreadcrumbLink, BreadcrumbList, BreadcrumbSeparator } from "@/components/ui/breadcrumb";
@@ -9,7 +10,7 @@ export default function CetExam() {
     <div className="min-h-screen bg-gradient-to-b from-[#f8f9fa] to-white">
       <header className="py-6 px-4 bg-white shadow-sm">
         <div className="container mx-auto">
-          <HeaderWithLogos />
+          <Logo />
           <Breadcrumb className="mt-4">
             <BreadcrumbList>
               <BreadcrumbItem>
