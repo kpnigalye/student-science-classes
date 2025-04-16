@@ -17,18 +17,17 @@ export default function Index() {
   const courses = [
     {
       title: "XI + XII + Entrance Batch (NEET/JEE)",
-      description: "Integrated program for Board & Competitive exam preparation",
+      description: "Integrated program for Board & NEET/JEE exam preparation",
       timing: "Morning Batch: 7:00 AM - 10:00 AM\nEvening Batch: 5:00 PM - 8:00 PM",
       subjects: "Physics, Chemistry, Biology/Mathematics",
       duration: "2 Years"
     },
     {
       title: "XI + XII + MHT-CET Batch",
-      description: "Ideal for students targeting MHT-CET for engineering or pharmacy admissions in Maharashtra. This batch includes board preparations along with CET coaching.",
+      description: "Integrated program for Board & MHT-CET exam preparation",
       timing: "Morning Batch: 7:00 AM - 11:00 AM\nEvening Batch: 5:00 PM - 9:00 PM",
       subjects: "Physics, Chemistry, Mathematics, Biology",
-      duration: "2 Years",
-      focus: "Board & NEET/JEE syllabus concepts, MCQ-solving techniques, test series"
+      duration: "2 Years"
     },
     {
       title: "XI + XII State Board",
@@ -71,8 +70,9 @@ export default function Index() {
       <section className="py-16 px-4 bg-gradient-to-r from-blue-900 to-blue-700 text-white">
         <div className="container mx-auto text-center">
           <GraduationCap className="w-16 h-16 mx-auto mb-6" />
-          <h1 className="text-4xl md:text-5xl font-bold mb-6">Excellence in Science Education</h1>
-          <p className="text-xl md:text-2xl">Nurturing Future Scientists and Engineers</p>
+          <h1 className="text-4xl md:text-5xl font-bold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-yellow-200 to-yellow-400">
+            Celebrating 45th Year of Excellence
+          </h1>
         </div>
       </section>
 
@@ -150,12 +150,12 @@ export default function Index() {
       <section className="py-16 px-4">
         <div className="container mx-auto">
           <h2 className="text-3xl font-bold text-center mb-12 text-blue-900">Entrance Exams</h2>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto">
             {entranceExams.map((exam, index) => (
               <Link key={index} to={exam.link} className="block">
-                <Card className="border-2 border-blue-100 bg-gradient-to-r from-blue-50 to-orange-50 hover:shadow-lg transition-shadow h-full">
+                <Card className="border-2 border-blue-100 bg-gradient-to-r from-blue-50 to-orange-50 hover:shadow-lg transition-shadow h-full text-center">
                   <CardHeader>
-                    <div className="flex flex-col gap-2">
+                    <div className="flex flex-col items-center gap-2">
                       <GraduationCap className="w-8 h-8 text-orange-600" />
                       <CardTitle className="text-[30px] font-bold text-blue-900">{exam.title}</CardTitle>
                       <p className="text-lg text-gray-700">{exam.subtitle}</p>
