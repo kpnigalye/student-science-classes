@@ -8,6 +8,7 @@ import Index from "./pages/Index";
 import NotFound from "./pages/NotFound";
 import NeetExam from "./pages/NeetExam";
 import JeeExam from "./pages/JeeExam";
+import CetExam from "./pages/CetExam";
 
 const queryClient = new QueryClient();
 
@@ -21,6 +22,7 @@ const App = () => (
           <Route path="/" element={<Index />} />
           <Route path="/neet" element={<NeetExam />} />
           <Route path="/jee" element={<JeeExam />} />
+          <Route path="/cet" element={<CetExam />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>

@@ -23,11 +23,12 @@ export default function Index() {
       duration: "2 Years"
     },
     {
-      title: "XII + Dropper Batch (NEET/JEE)",
-      description: "Special batch for students after XII for competitive exams",
-      timing: "Morning Batch: 8:00 AM - 1:00 PM\nEvening Batch: 2:00 PM - 7:00 PM",
-      subjects: "Physics, Chemistry, Biology/Mathematics",
-      duration: "1 Year"
+      title: "XI + XII + MHT-CET Batch",
+      description: "Ideal for students targeting MHT-CET for engineering or pharmacy admissions in Maharashtra. This batch includes board preparations along with CET coaching.",
+      timing: "Morning Batch: 7:00 AM - 11:00 AM\nEvening Batch: 5:00 PM - 9:00 PM",
+      subjects: "Physics, Chemistry, Mathematics, Biology",
+      duration: "2 Years",
+      focus: "Board & NEET/JEE syllabus concepts, MCQ-solving techniques, test series"
     },
     {
       title: "XI + XII State Board",
@@ -40,14 +41,22 @@ export default function Index() {
 
   const entranceExams = [
     {
-      title: "NEET (National Eligibility cum Entrance Test)",
-      description: "Medical entrance examination for MBBS and BDS courses",
+      title: "NEET",
+      subtitle: "National Eligibility cum Entrance Test",
+      description: "Medical Entrance Examination",
       link: "/neet"
     },
     {
-      title: "JEE (Joint Entrance Examination)",
-      description: "Engineering entrance examination for IITs and NITs",
+      title: "JEE",
+      subtitle: "Joint Entrance Examination",
+      description: "Engineering Entrance Examination",
       link: "/jee"
+    },
+    {
+      title: "MHT-CET",
+      subtitle: "Maharashtra Common Entrance Test",
+      description: "State level Entrance Exam",
+      link: "/cet"
     }
   ];
 
@@ -98,25 +107,37 @@ export default function Index() {
               <Card key={index} className="border-2 border-blue-100 bg-gradient-to-r from-blue-50 to-green-50 hover:shadow-lg transition-shadow">
                 <CardHeader>
                   <div className="flex items-center gap-3">
-                    <BookOpen className="w-6 h-6 text-green-600" />
+                    <BookOpen className="w-6 h-6 text-green-600 flex-shrink-0" />
                     <CardTitle className="text-lg text-blue-900">{course.title}</CardTitle>
                   </div>
                 </CardHeader>
                 <CardContent>
-                  <p className="mb-4 text-gray-600">{course.description}</p>
-                  <div className="space-y-2 text-sm">
-                    <p className="flex items-center text-gray-700">
-                      <Clock className="w-4 h-4 mr-2 text-blue-600" />
-                      {course.timing.split('\n').map((time, i) => (
-                        <span key={i} className="block">{time}</span>
-                      ))}
-                    </p>
-                    <p className="flex items-center text-gray-700">
-                      <BookOpen className="w-4 h-4 mr-2 text-blue-600" /> {course.subjects}
-                    </p>
-                    <p className="flex items-center text-gray-700">
-                      <Target className="w-4 h-4 mr-2 text-blue-600" /> Duration: {course.duration}
-                    </p>
+                  <div className="space-y-4">
+                    <p className="text-gray-600">{course.description}</p>
+                    <div className="space-y-2 text-sm">
+                      <p className="flex items-start gap-2">
+                        <Clock className="w-4 h-4 text-blue-600 mt-1 flex-shrink-0" />
+                        <span>
+                          {course.timing.split('\n').map((time, i) => (
+                            <span key={i} className="block">{time}</span>
+                          ))}
+                        </span>
+                      </p>
+                      <p className="flex items-start gap-2">
+                        <BookOpen className="w-4 h-4 text-blue-600 mt-1 flex-shrink-0" />
+                        <span>{course.subjects}</span>
+                      </p>
+                      <p className="flex items-start gap-2">
+                        <Target className="w-4 h-4 text-blue-600 mt-1 flex-shrink-0" />
+                        <span>Duration: {course.duration}</span>
+                      </p>
+                      {course.focus && (
+                        <p className="flex items-start gap-2">
+                          <BrainCircuit className="w-4 h-4 text-blue-600 mt-1 flex-shrink-0" />
+                          <span>{course.focus}</span>
+                        </p>
+                      )}
+                    </div>
                   </div>
                 </CardContent>
               </Card>
@@ -128,20 +149,19 @@ export default function Index() {
       {/* Entrance Exams Section */}
       <section className="py-16 px-4">
         <div className="container mx-auto">
-          <h2 className="text-3xl font-bold text-center mb-12 text-blue-900">Entrance Exam Preparation</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+          <h2 className="text-3xl font-bold text-center mb-12 text-blue-900">Entrance Exams</h2>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
             {entranceExams.map((exam, index) => (
               <Link key={index} to={exam.link} className="block">
                 <Card className="border-2 border-blue-100 bg-gradient-to-r from-blue-50 to-orange-50 hover:shadow-lg transition-shadow h-full">
                   <CardHeader>
-                    <div className="flex items-center gap-3">
-                      <GraduationCap className="w-6 h-6 text-orange-600" />
-                      <CardTitle className="text-lg text-blue-900">{exam.title}</CardTitle>
+                    <div className="flex flex-col gap-2">
+                      <GraduationCap className="w-8 h-8 text-orange-600" />
+                      <CardTitle className="text-[30px] font-bold text-blue-900">{exam.title}</CardTitle>
+                      <p className="text-lg text-gray-700">{exam.subtitle}</p>
+                      <p className="text-sm text-gray-600">{exam.description}</p>
                     </div>
                   </CardHeader>
-                  <CardContent>
-                    <p className="text-gray-600">{exam.description}</p>
-                  </CardContent>
                 </Card>
               </Link>
             ))}
