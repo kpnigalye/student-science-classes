@@ -1,8 +1,7 @@
-
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import Logo from "@/components/Logo";
 import { Link } from "react-router-dom";
-import { BookOpen, Award, Microscope, GraduationCap, Building } from "lucide-react";
+import { BookOpen, Award, GraduationCap, Building, CheckSquare, Percent } from "lucide-react";
 import { Breadcrumb, BreadcrumbItem, BreadcrumbLink, BreadcrumbList, BreadcrumbSeparator } from "@/components/ui/breadcrumb";
 
 export default function NeetExam() {
@@ -93,41 +92,53 @@ export default function NeetExam() {
             <Card className="border-2 border-blue-100 shadow-md hover:shadow-lg transition-shadow">
               <CardHeader className="bg-gradient-to-r from-blue-50 to-green-50">
                 <div className="flex items-center gap-3">
-                  <Microscope className="w-6 h-6 text-green-600" />
-                  <CardTitle className="text-xl text-blue-900">Important Topics</CardTitle>
+                  <CheckSquare className="w-6 h-6 text-green-600" />
+                  <CardTitle className="text-xl text-blue-900">Eligibility</CardTitle>
                 </div>
               </CardHeader>
               <CardContent className="pt-6">
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-                  <div className="space-y-2">
-                    <h4 className="font-semibold text-blue-800 border-b border-blue-100 pb-2">Physics</h4>
-                    <ul className="space-y-1 text-gray-700">
-                      <li>• Mechanics</li>
-                      <li>• Electrodynamics</li>
-                      <li>• Modern Physics</li>
-                      <li>• Thermodynamics</li>
-                      <li>• Optics</li>
-                    </ul>
+                <ul className="space-y-4">
+                  <li className="flex items-start gap-2">
+                    <div className="w-6 h-6 bg-green-100 text-green-600 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">1</div>
+                    <div>
+                      <p className="font-medium">XII Science with PCB</p>
+                      <p className="text-sm text-gray-600">Physics, Chemistry, Biology as main subjects</p>
+                    </div>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <div className="w-6 h-6 bg-green-100 text-green-600 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">2</div>
+                    <div>
+                      <p className="font-medium">Minimum Qualifying Marks in Board Exams</p>
+                      <p className="text-sm text-gray-600">As per category norms</p>
+                    </div>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <div className="w-6 h-6 bg-green-100 text-green-600 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">3</div>
+                    <div>
+                      <p className="font-medium">Age Criteria</p>
+                      <p className="text-sm text-gray-600">Minimum 17 years as of December 31 of admission year. No upper age limit.</p>
+                    </div>
+                  </li>
+                </ul>
+              </CardContent>
+            </Card>
+
+            <Card className="border-2 border-blue-100 shadow-md hover:shadow-lg transition-shadow">
+              <CardHeader className="bg-gradient-to-r from-blue-50 to-orange-50">
+                <div className="flex items-center gap-3">
+                  <Percent className="w-6 h-6 text-orange-600" />
+                  <CardTitle className="text-xl text-blue-900">Qualifying Percentile</CardTitle>
+                </div>
+              </CardHeader>
+              <CardContent className="pt-6">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                  <div className="p-4 rounded-lg bg-gradient-to-r from-orange-50 to-orange-100 border border-orange-200">
+                    <h4 className="font-semibold text-orange-900">General Category</h4>
+                    <p className="text-gray-700">50th percentile</p>
                   </div>
-                  <div className="space-y-2">
-                    <h4 className="font-semibold text-green-800 border-b border-green-100 pb-2">Chemistry</h4>
-                    <ul className="space-y-1 text-gray-700">
-                      <li>• Organic Chemistry</li>
-                      <li>• Inorganic Chemistry</li>
-                      <li>• Physical Chemistry</li>
-                      <li>• Analytical Chemistry</li>
-                      <li>• Surface Chemistry</li>
-                    </ul>
-                  </div>
-                  <div className="space-y-2">
-                    <h4 className="font-semibold text-purple-800 border-b border-purple-100 pb-2">Biology</h4>
-                    <ul className="space-y-1 text-gray-700">
-                      <li>• Human Physiology</li>
-                      <li>• Plant Physiology</li>
-                      <li>• Genetics & Evolution</li>
-                      <li>• Cell Biology</li>
-                      <li>• Ecology & Environment</li>
-                    </ul>
+                  <div className="p-4 rounded-lg bg-gradient-to-r from-blue-50 to-blue-100 border border-blue-200">
+                    <h4 className="font-semibold text-blue-900">SC/ST/OBC</h4>
+                    <p className="text-gray-700">40th percentile</p>
                   </div>
                 </div>
               </CardContent>
@@ -160,37 +171,84 @@ export default function NeetExam() {
                     <p className="text-sm text-gray-600 mt-1">Alternative medicine and dental opportunities</p>
                   </div>
                 </div>
+                <div className="mt-6 p-4 bg-gray-50 rounded-lg border border-gray-200">
+                  <p className="text-sm text-gray-600 italic">
+                    Note: The ranks and course options mentioned above are based on historical data and admission trends, intended to provide an estimated idea of admission possibilities. Actual outcomes may vary each year depending on exam difficulty, the number of applicants, seat availability, and changing cutoffs. Final admissions are subject to category reservations, state quotas, and institutional seat matrices.
+                  </p>
+                </div>
               </CardContent>
             </Card>
 
             <Card className="border-2 border-blue-100 shadow-md hover:shadow-lg transition-shadow">
               <CardHeader className="bg-gradient-to-r from-blue-50 to-purple-50">
                 <div className="flex items-center gap-3">
-                  <Building className="w-6 h-6 text-purple-600" />
+                  <Award className="w-6 h-6 text-purple-600" />
+                  <CardTitle className="text-xl text-blue-900">Popular Career Options after NEET</CardTitle>
+                </div>
+              </CardHeader>
+              <CardContent className="pt-6">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                  {[
+                    ["MBBS (Medical)", "Bachelor of Medicine and Bachelor of Surgery"],
+                    ["BDS (Dental)", "Bachelor of Dental Surgery"],
+                    ["BAMS (Ayurveda)", "Bachelor of Ayurvedic Medicine and Surgery"],
+                    ["BHMS (Homeopathy)", "Bachelor of Homeopathic Medicine and Surgery"],
+                    ["B.Sc. Nursing", "Bachelor of Science in Nursing"],
+                    ["B.Sc. Allied Health Sciences", "Various specialized healthcare programs"]
+                  ].map(([title, description], index) => (
+                    <div key={index} className="p-4 rounded-lg bg-gradient-to-r from-purple-50 to-purple-100 border border-purple-200">
+                      <h4 className="font-semibold text-purple-900">{title}</h4>
+                      <p className="text-sm text-gray-700">{description}</p>
+                    </div>
+                  ))}
+                </div>
+              </CardContent>
+            </Card>
+
+            <Card className="border-2 border-blue-100 shadow-md hover:shadow-lg transition-shadow">
+              <CardHeader className="bg-gradient-to-r from-blue-50 to-green-50">
+                <div className="flex items-center gap-3">
+                  <Building className="w-6 h-6 text-green-600" />
                   <CardTitle className="text-xl text-blue-900">Top Medical Colleges</CardTitle>
                 </div>
               </CardHeader>
               <CardContent className="pt-6">
-                <div className="space-y-3">
-                  <div className="flex justify-between items-center p-3 bg-gray-50 rounded-md hover:bg-gray-100 transition-colors">
-                    <span className="font-medium text-gray-900">All India Institute of Medical Sciences (AIIMS), Delhi</span>
-                    <span className="text-sm text-blue-600 bg-blue-50 px-2 py-1 rounded-full">Top Ranked</span>
+                <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                  <div className="space-y-4">
+                    <h3 className="font-semibold text-lg text-green-800 mb-4">Government Colleges</h3>
+                    {[
+                      "AIIMS Delhi",
+                      "AFMC Pune",
+                      "MAMC Delhi",
+                      "JIPMER Puducherry",
+                      "BHU Varanasi",
+                      "Grant Medical College, Mumbai",
+                      "Seth GS Medical College, Mumbai",
+                      "BJ Medical College, Pune",
+                      "Madras Medical College, Chennai",
+                      "Dr RML Institute, Lucknow"
+                    ].map((college, index) => (
+                      <div key={index} className="flex justify-between items-center p-3 bg-gradient-to-r from-green-50 to-green-100 rounded-md hover:bg-green-100 transition-colors">
+                        <span className="font-medium text-gray-900">{college}</span>
+                        <span className="text-sm text-green-600 bg-green-50 px-2 py-1 rounded-full">Government</span>
+                      </div>
+                    ))}
                   </div>
-                  <div className="flex justify-between items-center p-3 bg-gray-50 rounded-md hover:bg-gray-100 transition-colors">
-                    <span className="font-medium text-gray-900">Christian Medical College (CMC), Vellore</span>
-                    <span className="text-sm text-blue-600 bg-blue-50 px-2 py-1 rounded-full">Top Ranked</span>
-                  </div>
-                  <div className="flex justify-between items-center p-3 bg-gray-50 rounded-md hover:bg-gray-100 transition-colors">
-                    <span className="font-medium text-gray-900">Armed Forces Medical College (AFMC), Pune</span>
-                    <span className="text-sm text-green-600 bg-green-50 px-2 py-1 rounded-full">Government</span>
-                  </div>
-                  <div className="flex justify-between items-center p-3 bg-gray-50 rounded-md hover:bg-gray-100 transition-colors">
-                    <span className="font-medium text-gray-900">King George's Medical University, Lucknow</span>
-                    <span className="text-sm text-green-600 bg-green-50 px-2 py-1 rounded-full">Government</span>
-                  </div>
-                  <div className="flex justify-between items-center p-3 bg-gray-50 rounded-md hover:bg-gray-100 transition-colors">
-                    <span className="font-medium text-gray-900">Kasturba Medical College, Manipal</span>
-                    <span className="text-sm text-orange-600 bg-orange-50 px-2 py-1 rounded-full">Private</span>
+                  <div className="space-y-4">
+                    <h3 className="font-semibold text-lg text-purple-800 mb-4">Private/Deemed Colleges</h3>
+                    {[
+                      "CMC Vellore",
+                      "Kasturba Medical College, Manipal",
+                      "Amrita Vishwa Vidyapeetham",
+                      "St. John's Medical College",
+                      "Dr. DY Patil Vidyapeeth, Pune",
+                      "Saveetha Institute, Chennai"
+                    ].map((college, index) => (
+                      <div key={index} className="flex justify-between items-center p-3 bg-gradient-to-r from-purple-50 to-purple-100 rounded-md hover:bg-purple-100 transition-colors">
+                        <span className="font-medium text-gray-900">{college}</span>
+                        <span className="text-sm text-purple-600 bg-purple-50 px-2 py-1 rounded-full">Private</span>
+                      </div>
+                    ))}
                   </div>
                 </div>
               </CardContent>
