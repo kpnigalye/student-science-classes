@@ -68,15 +68,17 @@ export default function Index() {
       </section>
 
       {/* Why Choose Us Section */}
-      <section className="py-16 px-4 bg-white">
+      <section className="py-16 px-4">
         <div className="container mx-auto">
           <h2 className="text-3xl font-bold text-center mb-12 text-blue-900">Why Choose Us?</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {whyChooseUs.map((item, index) => (
-              <Card key={index} className="border-2 border-blue-100 hover:border-blue-500 transition-colors">
+              <Card key={index} className="border-2 border-blue-100 bg-gradient-to-r from-blue-50 to-purple-50 hover:shadow-lg transition-shadow">
                 <CardHeader>
-                  <item.icon className="w-10 h-10 text-blue-600 mb-4" />
-                  <CardTitle className="text-blue-900">{item.title}</CardTitle>
+                  <div className="flex items-center gap-3">
+                    <item.icon className="w-10 h-10 text-blue-600" />
+                    <CardTitle className="text-lg text-blue-900">{item.title}</CardTitle>
+                  </div>
                 </CardHeader>
                 <CardContent>
                   <p className="text-gray-600">{item.description}</p>
@@ -93,9 +95,12 @@ export default function Index() {
           <h2 className="text-3xl font-bold text-center mb-12 text-blue-900">Our Courses</h2>
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
             {courses.map((course, index) => (
-              <Card key={index} className="border-2 border-blue-100">
+              <Card key={index} className="border-2 border-blue-100 bg-gradient-to-r from-blue-50 to-green-50 hover:shadow-lg transition-shadow">
                 <CardHeader>
-                  <CardTitle className="text-xl font-bold text-blue-900">{course.title}</CardTitle>
+                  <div className="flex items-center gap-3">
+                    <BookOpen className="w-6 h-6 text-green-600" />
+                    <CardTitle className="text-lg text-blue-900">{course.title}</CardTitle>
+                  </div>
                 </CardHeader>
                 <CardContent>
                   <p className="mb-4 text-gray-600">{course.description}</p>
@@ -121,15 +126,18 @@ export default function Index() {
       </section>
 
       {/* Entrance Exams Section */}
-      <section className="py-16 px-4 bg-white">
+      <section className="py-16 px-4">
         <div className="container mx-auto">
           <h2 className="text-3xl font-bold text-center mb-12 text-blue-900">Entrance Exam Preparation</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
             {entranceExams.map((exam, index) => (
-              <Link key={index} to={exam.link}>
-                <Card className="border-2 border-blue-100 hover:border-blue-500 transition-colors h-full">
+              <Link key={index} to={exam.link} className="block">
+                <Card className="border-2 border-blue-100 bg-gradient-to-r from-blue-50 to-orange-50 hover:shadow-lg transition-shadow h-full">
                   <CardHeader>
-                    <CardTitle className="text-xl font-bold text-blue-900">{exam.title}</CardTitle>
+                    <div className="flex items-center gap-3">
+                      <GraduationCap className="w-6 h-6 text-orange-600" />
+                      <CardTitle className="text-lg text-blue-900">{exam.title}</CardTitle>
+                    </div>
                   </CardHeader>
                   <CardContent>
                     <p className="text-gray-600">{exam.description}</p>
