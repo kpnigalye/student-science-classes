@@ -1,6 +1,6 @@
 
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Code, Microscope } from "lucide-react";
+import { Code, GraduationCap, Microscope } from "lucide-react";
 
 export function CareerOptionsSection() {
   return (
