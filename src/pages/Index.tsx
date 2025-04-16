@@ -1,4 +1,4 @@
-import { Users, BookOpen, Target, Clock, Award, BrainCircuit, BadgeCheck } from "lucide-react";
+import { Users, BookOpen, Target, Clock, Award, BrainCircuit, BadgeCheck, GraduationCap } from "lucide-react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import HeaderWithLogos from "@/components/HeaderWithLogos";
 import { Link } from "react-router-dom";
