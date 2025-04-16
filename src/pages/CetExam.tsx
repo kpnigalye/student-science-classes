@@ -1,3 +1,4 @@
+
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import Logo from "@/components/Logo";
 import { Link } from "react-router-dom";
@@ -169,15 +170,6 @@ export default function CetExam() {
           </section>
         </div>
       </main>
-
-      <footer className="bg-blue-900 text-white py-8 mt-16">
-        <div className="container mx-auto px-4 text-center">
-          <h3 className="text-xl font-bold mb-4">Contact Us</h3>
-          <p className="mb-2">📧 info@studentscienceclasses.com</p>
-          <p className="mb-2">📞 +91 98765 43210</p>
-          <p>🏢 Science City Road, Near Metro Station, Mumbai - 400001</p>
-        </div>
-      </footer>
     </div>
   );
 }

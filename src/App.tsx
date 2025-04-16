@@ -12,6 +12,7 @@ import CetExam from "./pages/CetExam";
 import { ScrollToTop } from "./components/ScrollToTop";
 import { WhatsAppChat } from "./components/WhatsAppChat";
 import { ScrollToTopOnNavigation } from "./components/ScrollToTopOnNavigation";
+import { Footer } from "./components/Footer";
 
 const queryClient = new QueryClient();
 
@@ -29,6 +30,7 @@ const App = () => (
           <Route path="/cet" element={<CetExam />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
+        <Footer />
         <ScrollToTop />
         <WhatsAppChat />
       </BrowserRouter>
