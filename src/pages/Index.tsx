@@ -1,5 +1,5 @@
 
-import { GraduationCap, Users, BookOpen, Target, Clock, Award, BrainCircuit, BadgeCheck } from "lucide-react";
+import { GraduationCap, Users, BookOpen, Target, Clock, Award, BrainCircuit, BadgeCheck, Calculator, Microscope } from "lucide-react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import Logo from "@/components/Logo";
 import { Link } from "react-router-dom";
