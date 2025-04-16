@@ -1,4 +1,5 @@
-import { GraduationCap, Users, BookOpen, Target, Clock, Award, BrainCircuit, BadgeCheck, Calculator, Microscope } from "lucide-react";
+
+import { GraduationCap, Users, BookOpen, Target, Clock, Award, BrainCircuit, BadgeCheck } from "lucide-react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import Logo from "@/components/Logo";
 import { Link } from "react-router-dom";
@@ -42,14 +43,14 @@ export default function Index() {
       title: "NEET (National Eligibility cum Entrance Test)",
       description: "Medical entrance examination for MBBS and BDS courses",
       link: "/neet",
-      icon: Microscope,  // Ensure this is correctly referenced
+      icon: Microscope,
       color: "from-purple-50 to-pink-50 border-purple-100 hover:border-purple-300"
     },
     {
       title: "JEE (Joint Entrance Examination)",
       description: "Engineering entrance examination for IITs and NITs",
       link: "/jee",
-      icon: Calculator,  // Ensure this is correctly referenced
+      icon: Calculator,
       color: "from-blue-50 to-cyan-50 border-blue-100 hover:border-blue-300"
     }
   ];
