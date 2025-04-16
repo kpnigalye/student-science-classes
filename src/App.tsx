@@ -9,6 +9,9 @@ import NotFound from "./pages/NotFound";
 import NeetExam from "./pages/NeetExam";
 import JeeExam from "./pages/JeeExam";
 import CetExam from "./pages/CetExam";
+import { ScrollToTop } from "./components/ScrollToTop";
+import { WhatsAppChat } from "./components/WhatsAppChat";
+import { ScrollToTopOnNavigation } from "./components/ScrollToTopOnNavigation";
 
 const queryClient = new QueryClient();
 
@@ -18,6 +21,7 @@ const App = () => (
       <Toaster />
       <Sonner />
       <BrowserRouter>
+        <ScrollToTopOnNavigation />
         <Routes>
           <Route path="/" element={<Index />} />
           <Route path="/neet" element={<NeetExam />} />
@@ -25,6 +29,8 @@ const App = () => (
           <Route path="/cet" element={<CetExam />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
+        <ScrollToTop />
+        <WhatsAppChat />
       </BrowserRouter>
     </TooltipProvider>
   </QueryClientProvider>
