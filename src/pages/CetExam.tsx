@@ -1,8 +1,7 @@
-
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import Logo from "@/components/Logo";
 import { Link } from "react-router-dom";
-import { BookOpen, Award, GraduationCap, Building, Target, Users, Percent } from "lucide-react";
+import { BookOpen, Award, GraduationCap, Building, Target, Users, Percent, Microscope, Code } from "lucide-react";
 import { Breadcrumb, BreadcrumbItem, BreadcrumbLink, BreadcrumbList, BreadcrumbSeparator } from "@/components/ui/breadcrumb";
 
 export default function CetExam() {
@@ -38,18 +37,47 @@ export default function CetExam() {
 
           <section className="space-y-8">
             <Card className="border-2 border-blue-100 shadow-md hover:shadow-lg transition-shadow">
-              <CardHeader className="bg-gradient-to-r from-blue-50 to-purple-50">
+              <CardHeader className="bg-gradient-to-r from-blue-50 to-orange-50">
                 <div className="flex items-center gap-3">
-                  <BookOpen className="w-6 h-6 text-blue-600" />
-                  <CardTitle className="text-xl text-blue-900">What is MHT-CET?</CardTitle>
+                  <BookOpen className="w-6 h-6 text-orange-600" />
+                  <CardTitle className="text-xl text-blue-900">Exam Pattern</CardTitle>
                 </div>
               </CardHeader>
               <CardContent className="pt-6">
-                <p className="mb-3">MHT-CET (Maharashtra Health and Technical Common Entrance Test) is a state-level entrance exam conducted by the Maharashtra State Common Entrance Test Cell.</p>
-                <p className="mb-3">It is used for admission to undergraduate courses in engineering (BE/BTech), pharmacy (BPharma, DPharma), and agriculture in Maharashtra.</p>
-                <p className="mb-3">The exam is conducted once a year in online (computer-based) mode.</p>
-                <p className="mb-3">The difficulty level is comparable to JEE Main and Maharashtra State Board Class 12 exams.</p>
-                <p>Medical admissions are no longer through MHT-CET; NEET is now mandatory for medical courses across India.</p>
+                <div className="space-y-6">
+                  <div className="space-y-2">
+                    <p><strong>Mode:</strong> Online Computer Based Test (CBT)</p>
+                    <p><strong>Duration:</strong> 3 hours total (90 minutes per section)</p>
+                    <p><strong>Language:</strong> English, Marathi, Hindi, Urdu</p>
+                    <p><strong>Syllabus Weightage:</strong> 20% questions from Class 11 syllabus, 80% from Class 12 syllabus</p>
+                  </div>
+
+                  <div>
+                    <h4 className="font-semibold mb-2">Groups:</h4>
+                    <ul className="list-disc list-inside space-y-2">
+                      <li>PCM (Physics, Chemistry, Mathematics) for engineering aspirants</li>
+                      <li>PCB (Physics, Chemistry, Biology) for pharmacy aspirants</li>
+                    </ul>
+                  </div>
+
+                  <div>
+                    <h4 className="font-semibold mb-2">Number of Questions:</h4>
+                    <ul className="list-disc list-inside space-y-2">
+                      <li>PCM group: 150 questions (50 each from Physics, Chemistry, Mathematics)</li>
+                      <li>PCB group: 200 questions (50 each from Physics and Chemistry, 100 from Biology)</li>
+                    </ul>
+                  </div>
+
+                  <div>
+                    <h4 className="font-semibold mb-2">Marking Scheme:</h4>
+                    <ul className="list-disc list-inside space-y-2">
+                      <li>Physics & Chemistry: 1 mark per correct answer</li>
+                      <li>Mathematics: 2 marks per correct answer</li>
+                      <li>Biology: 1 mark per correct answer</li>
+                      <li>Negative Marking: None</li>
+                    </ul>
+                  </div>
+                </div>
               </CardContent>
             </Card>
 
@@ -97,51 +125,6 @@ export default function CetExam() {
             </Card>
 
             <Card className="border-2 border-blue-100 shadow-md hover:shadow-lg transition-shadow">
-              <CardHeader className="bg-gradient-to-r from-blue-50 to-orange-50">
-                <div className="flex items-center gap-3">
-                  <BookOpen className="w-6 h-6 text-orange-600" />
-                  <CardTitle className="text-xl text-blue-900">Exam Pattern</CardTitle>
-                </div>
-              </CardHeader>
-              <CardContent className="pt-6">
-                <div className="space-y-6">
-                  <div className="space-y-2">
-                    <p><strong>Mode:</strong> Online Computer Based Test (CBT)</p>
-                    <p><strong>Duration:</strong> 3 hours total (90 minutes per section)</p>
-                    <p><strong>Language:</strong> English, Marathi, Hindi, Urdu</p>
-                    <p><strong>Syllabus Weightage:</strong> 20% questions from Class 11 syllabus, 80% from Class 12 syllabus</p>
-                  </div>
-
-                  <div>
-                    <h4 className="font-semibold mb-2">Groups:</h4>
-                    <ul className="list-disc list-inside space-y-2">
-                      <li>PCM (Physics, Chemistry, Mathematics) for engineering aspirants</li>
-                      <li>PCB (Physics, Chemistry, Biology) for pharmacy aspirants</li>
-                    </ul>
-                  </div>
-
-                  <div>
-                    <h4 className="font-semibold mb-2">Number of Questions:</h4>
-                    <ul className="list-disc list-inside space-y-2">
-                      <li>PCM group: 150 questions (50 each from Physics, Chemistry, Mathematics)</li>
-                      <li>PCB group: 200 questions (50 each from Physics and Chemistry, 100 from Biology)</li>
-                    </ul>
-                  </div>
-
-                  <div>
-                    <h4 className="font-semibold mb-2">Marking Scheme:</h4>
-                    <ul className="list-disc list-inside space-y-2">
-                      <li>Physics & Chemistry: 1 mark per correct answer</li>
-                      <li>Mathematics: 2 marks per correct answer</li>
-                      <li>Biology: 1 mark per correct answer</li>
-                      <li>Negative Marking: None</li>
-                    </ul>
-                  </div>
-                </div>
-              </CardContent>
-            </Card>
-
-            <Card className="border-2 border-blue-100 shadow-md hover:shadow-lg transition-shadow">
               <CardHeader className="bg-gradient-to-r from-blue-50 to-indigo-50">
                 <div className="flex items-center gap-3">
                   <Percent className="w-6 h-6 text-indigo-600" />
@@ -159,19 +142,94 @@ export default function CetExam() {
             </Card>
 
             <Card className="border-2 border-blue-100 shadow-md hover:shadow-lg transition-shadow">
-              <CardHeader className="bg-gradient-to-r from-blue-50 to-pink-50">
+              <CardHeader className="bg-gradient-to-r from-blue-50 to-purple-50">
                 <div className="flex items-center gap-3">
-                  <Award className="w-6 h-6 text-pink-600" />
-                  <CardTitle className="text-xl text-blue-900">Career Options After MHT-CET</CardTitle>
+                  <Award className="w-6 h-6 text-purple-600" />
+                  <CardTitle className="text-xl text-blue-900">Popular Career Options after CET</CardTitle>
                 </div>
               </CardHeader>
               <CardContent className="pt-6">
-                <div className="space-y-4">
-                  <div className="space-y-3">
-                    <p><strong>Engineering:</strong> Admission to BE/BTech programs in Maharashtra's government and private engineering colleges including reputed institutes like COEP, VJTI, and others.</p>
-                    <p><strong>Pharmacy:</strong> Admission to BPharma and DPharma courses in Maharashtra colleges.</p>
-                    <p><strong>Agriculture:</strong> Some agriculture-related undergraduate courses also accept MHT-CET scores.</p>
-                    <p>Graduates can pursue careers in core engineering fields, pharmaceutical industries, research, academia, or further studies like MTech, MBA, or PharmD.</p>
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                  {[
+                    ["Engineering", "BE/BTech in various branches"],
+                    ["Pharmacy", "BPharma and DPharma programs"],
+                    ["Research", "Research and development in engineering"],
+                    ["Industry", "Manufacturing and production"],
+                    ["IT Sector", "Software development and technology"],
+                    ["Academia", "Teaching and educational roles"]
+                  ].map(([title, description], index) => (
+                    <div key={index} className="p-4 rounded-lg bg-gradient-to-r from-purple-50 to-purple-100 border border-purple-200">
+                      <h4 className="font-semibold text-purple-900">{title}</h4>
+                      <p className="text-sm text-gray-700">{description}</p>
+                    </div>
+                  ))}
+                </div>
+              </CardContent>
+            </Card>
+          </section>
+
+          <section className="space-y-8">
+            <Card className="border-2 border-blue-100 shadow-md hover:shadow-lg transition-shadow">
+              <CardHeader className="bg-gradient-to-r from-blue-50 to-indigo-50">
+                <div className="flex items-center gap-3">
+                  <GraduationCap className="w-6 h-6 text-indigo-600" />
+                  <CardTitle className="text-xl text-blue-900">Career Options after XI + XII (Plain Science)</CardTitle>
+                </div>
+              </CardHeader>
+              <CardContent className="pt-6">
+                <div className="space-y-6">
+                  <p className="text-lg font-semibold mb-4">📚 Plain Science (State Board Science Students)</p>
+                  <p className="text-gray-600 mb-6">For students pursuing XI + XII Science without entrance exams.</p>
+
+                  <div className="space-y-8">
+                    <div>
+                      <div className="flex items-center gap-2 mb-4">
+                        <Code className="w-5 h-5 text-blue-600" />
+                        <h3 className="text-lg font-semibold text-blue-900">📊 Career Options after XII (PCM)</h3>
+                      </div>
+                      <ul className="grid grid-cols-1 md:grid-cols-2 gap-3 list-disc list-inside text-gray-700">
+                        <li>Engineering (Mechanical, Civil, Electrical, Aerospace, Chemical, Industrial, etc.)</li>
+                        <li>Architecture</li>
+                        <li>Data Science</li>
+                        <li>Computer Science & IT (BCA, B.Sc. IT, Software Development, AI, Machine Learning)</li>
+                        <li>Merchant Navy</li>
+                        <li>Aviation (Pilot, Aviation Management)</li>
+                        <li>Robotics and Biomedical Engineering</li>
+                        <li>Mathematics and Statistics (Actuarial Science, Research)</li>
+                        <li>Design and Planning (Urban Planning, Product Design)</li>
+                        <li>Investment Banking and Finance</li>
+                        <li>Defense Services (NDA, technical roles in Army, Navy, Air Force)</li>
+                        <li>Pharmacy and Chemical Engineering</li>
+                        <li>Environmental Science and Research</li>
+                        <li>Teaching and Academia (Science teacher, professor)</li>
+                        <li>Entrepreneurship in technology, manufacturing, or services</li>
+                      </ul>
+                    </div>
+
+                    <div>
+                      <div className="flex items-center gap-2 mb-4">
+                        <Microscope className="w-5 h-5 text-green-600" />
+                        <h3 className="text-lg font-semibold text-blue-900">📊 Career Options after XII (PCB)</h3>
+                      </div>
+                      <ul className="grid grid-cols-1 md:grid-cols-2 gap-3 list-disc list-inside text-gray-700">
+                        <li>MBBS (Medicine)</li>
+                        <li>BDS (Dentistry)</li>
+                        <li>BPT (Physiotherapy)</li>
+                        <li>B.Sc. Nursing</li>
+                        <li>Pharmacy (B.Pharm)</li>
+                        <li>Biotechnology</li>
+                        <li>Microbiology</li>
+                        <li>Genetics</li>
+                        <li>Biomedical Engineering</li>
+                        <li>Agriculture and Forestry</li>
+                        <li>Environmental Science</li>
+                        <li>Nutrition and Dietetics</li>
+                        <li>Medical Laboratory Technology</li>
+                        <li>Occupational Therapy</li>
+                        <li>Research and Academics in Life Sciences</li>
+                        <li>Government Jobs in healthcare and allied sectors</li>
+                      </ul>
+                    </div>
                   </div>
                 </div>
               </CardContent>
