@@ -1,5 +1,5 @@
 
-import { GraduationCap, Users, BookOpen, Target, Clock, Award, BrainCircuit, BadgeCheck } from "lucide-react";
+import { GraduationCap, Users, BookOpen, Target, Clock, Award, BrainCircuit, BadgeCheck, AlertTriangle } from "lucide-react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import Logo from "@/components/Logo";
 import { Link } from "react-router-dom";
@@ -155,6 +155,45 @@ export default function Index() {
                 </Card>
               </Link>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Important Info Section */}
+      <section className="py-16 px-4 bg-amber-50">
+        <div className="container mx-auto max-w-4xl">
+          <div className="flex items-center justify-center gap-3 mb-8">
+            <AlertTriangle className="w-8 h-8 text-amber-600" />
+            <h2 className="text-3xl font-bold text-center text-blue-900">Important Information</h2>
+          </div>
+          <div className="bg-white rounded-lg border-2 border-amber-200 shadow-md p-8 space-y-4 text-gray-700 leading-relaxed">
+            <h3 className="text-xl font-bold text-blue-900">Will NEET/JEE Courses Include Board Exam Coaching?</h3>
+            
+            <p>Many coaching classes claim to cover Board exam preparation within NEET/JEE courses, but in reality, independent effort by students is essential for scoring well in Board exams. <strong>Parents are requested to take note.</strong></p>
+            
+            <p>Board and competitive exams require different approaches and teaching styles, ideally handled by separate teaching teams. Given the vast NEET/JEE syllabus, the faculty may not have sufficient time to cover the Board syllabus comprehensively.</p>
+            
+            <p>That said, there is significant overlap in syllabus. A sincere and disciplined student usually does not need additional coaching for Boards. At <strong>Students' Classes</strong>, we support Board preparation in Std. XII by:</p>
+            
+            <ul className="list-disc list-inside space-y-1 pl-4">
+              <li>Conducting dedicated lectures for Board guidance</li>
+              <li>Holding subjective tests and Board prelims</li>
+            </ul>
+            
+            <h4 className="text-lg font-semibold text-blue-800 pt-2">Regarding Std. XI College Exams:</h4>
+            <ul className="list-disc list-inside space-y-1 pl-4">
+              <li>Students in our batches come from different colleges, and college syllabi often differ from our schedule.</li>
+              <li>We follow NCERT chapter sequence to align with entrance exam goals.</li>
+              <li>As a result, our syllabus may not always match college test portions.</li>
+            </ul>
+            
+            <p>In such cases, our teachers offer extra revision support, provided:</p>
+            <ul className="list-disc list-inside space-y-1 pl-4">
+              <li>Students inform us of the mismatched topics</li>
+              <li>Students are willing to attend sessions beyond regular hours.</li>
+            </ul>
+            
+            <p className="font-semibold text-blue-900 pt-2">We are committed to our students' success, especially in competitive exams, which remain our primary focus.</p>
           </div>
         </div>
       </section>
