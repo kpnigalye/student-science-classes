@@ -44,19 +44,15 @@ export function IntegratedCoachingSection() {
           </h2>
           <div className="space-y-6 text-blue-100 text-lg leading-relaxed">
             <p>
-              In recent years, the academic landscape after Class 10 has changed significantly. Students are no longer preparing only for Board exams — they are simultaneously expected to perform well in competitive exams like <strong className="text-white">NEET, JEE, and MHT-CET</strong>.
+              In recent years, the academic landscape after Class 10 has changed significantly. Students are no longer
+              preparing only for Board exams. They are simultaneously expected to perform well in competitive exams like{" "}
+              <strong className="text-white">NEET, JEE, and MHT-CET</strong>. These exams demand Strong conceptual
+              understanding, Regular practice and testing, Long-term, structured preparation.
             </p>
-            <div className="space-y-6 text-blue-100 text-lg leading-relaxed">
-              <p>
-                In recent years, the academic landscape after Class 10 has changed significantly. Students are no longer
-                preparing only for Board exams. They are simultaneously expected to perform well in competitive exams like{" "}
-                <strong className="text-white">NEET, JEE, and MHT-CET</strong>. These exams demand Strong conceptual
-                understanding, Regular practice and testing, Long-term, structured preparation.
-              </p>
-              <p className="text-center font-medium text-yellow-200">
-                Because of this, starting preparation early (from Std. XI) has become essential — not optional.
-              </p>
-            </div>
+            <p className="text-center font-medium text-yellow-200">
+              Because of this, starting preparation early (from Std. XI) has become essential — not optional.
+            </p>
+          </div>
         </div>
       </section>
 
