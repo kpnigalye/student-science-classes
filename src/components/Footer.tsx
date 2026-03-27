@@ -1,5 +1,4 @@
-
-import React from 'react';
+import React from "react";
 
 export const Footer = () => {
   return (
@@ -8,9 +7,11 @@ export const Footer = () => {
         <h3 className="text-xl font-bold mb-5">Contact Us</h3>
         <p className="text-blue-200">📧 studentsclasseschembur@gmail.com</p>
         <p className="text-blue-200">📞 +91 8097740318 / +91 9136596326</p>
-        <p className="text-blue-200">🏢 First floor, Rajashri building, N.G. Acharya Road, Near Royal Orchid hotel, Chembur (E), Mumbai - 400071</p>
+        <p className="text-blue-200">
+          🏢 First floor, Rajashri building, N.G. Acharya Road, Near Royal Orchid hotel, Chembur (E), Mumbai - 400071
+        </p>
         <div className="pt-4 mt-4 border-t border-blue-800">
-          <p className="text-blue-400 text-sm">© {new Date().getFullYear()} Students' Science Classes. All rights reserved.</p>
+          <p className="text-blue-400 text-sm">© {new Date().getFullYear()} Students' Classes. All rights reserved.</p>
         </div>
       </div>
     </footer>

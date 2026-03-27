@@ -1,5 +1,15 @@
-
-import { Users, BookOpen, Target, Clock, Award, BrainCircuit, BadgeCheck, AlertTriangle, GraduationCap, Star } from "lucide-react";
+import {
+  Users,
+  BookOpen,
+  Target,
+  Clock,
+  Award,
+  BrainCircuit,
+  BadgeCheck,
+  AlertTriangle,
+  GraduationCap,
+  Star,
+} from "lucide-react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import Logo from "@/components/Logo";
 import { Link } from "react-router-dom";
@@ -22,7 +32,7 @@ export default function Index() {
       subjects: "Physics, Chemistry, Biology / Maths (NCERT + State board)",
       coursePlan: "Foundation + Concept clarity + Classroom practice + Test series + Doubt solving",
       duration: "24 months",
-      lectureDuration: "7-8 Hours Daily (Integrated batch) & 4-5 hours daily (Regular batch)"
+      lectureDuration: "7-8 Hours Daily (Integrated batch) & 4-5 hours daily (Regular batch)",
     },
     {
       title: "XI + XII + MHT-CET",
@@ -30,7 +40,7 @@ export default function Index() {
       subjects: "Physics, Chemistry, Biology, Maths (State board)",
       coursePlan: "Foundation + Concept clarity + Classroom practice + Test series + Doubt solving",
       duration: "24 months",
-      lectureDuration: "4-5 hours daily (Regular batch)"
+      lectureDuration: "4-5 hours daily (Regular batch)",
     },
     {
       title: "XI + XII State Board",
@@ -38,16 +48,17 @@ export default function Index() {
       subjects: "Physics, Chemistry, Biology, Maths (State board)",
       coursePlan: "Foundation + Concept clarity + Classroom practice + Test series + Doubt solving",
       duration: "22 months",
-      lectureDuration: "3-4 hours daily (Regular batch)"
+      lectureDuration: "3-4 hours daily (Regular batch)",
     },
     {
       title: "Rank Booster (NEET/JEE Repeaters)",
-      description: "Accelerate your prep with targeted revision, high-impact practice, and expert mentorship. Ideal for repeaters and serious aspirants aiming for top ranks.",
+      description:
+        "Accelerate your prep with targeted revision, high-impact practice, and expert mentorship. Ideal for repeaters and serious aspirants aiming for top ranks.",
       subjects: "Physics, Chemistry, Biology/Mathematics",
       coursePlan: "Foundation + Concept clarity + Classroom practice + Test series + Doubt solving",
       duration: "10-12 months",
-      lectureDuration: "4-5 hours daily (Regular batch)"
-    }
+      lectureDuration: "4-5 hours daily (Regular batch)",
+    },
   ];
 
   const entranceExams = [
@@ -55,20 +66,20 @@ export default function Index() {
       title: "NEET",
       subtitle: "National Eligibility cum Entrance Test",
       description: "Medical Entrance Examination",
-      link: "/neet"
+      link: "/neet",
     },
     {
       title: "JEE",
       subtitle: "Joint Entrance Examination (Mains + Advanced)",
       description: "Engineering Entrance Examination",
-      link: "/jee"
+      link: "/jee",
     },
     {
       title: "MHT-CET",
       subtitle: "Maharashtra Common Entrance Test",
       description: "State level Entrance Exam",
-      link: "/cet"
-    }
+      link: "/cet",
+    },
   ];
 
   return (
@@ -104,7 +115,10 @@ export default function Index() {
           <h2 className="text-3xl font-bold text-center mb-10 text-blue-900">Why Choose Us?</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {whyChooseUs.map((item, index) => (
-              <Card key={index} className="border border-blue-100 bg-gradient-to-br from-white to-blue-50/50 hover:shadow-lg hover:-translate-y-0.5 transition-all duration-300">
+              <Card
+                key={index}
+                className="border border-blue-100 bg-gradient-to-br from-white to-blue-50/50 hover:shadow-lg hover:-translate-y-0.5 transition-all duration-300"
+              >
                 <CardHeader>
                   <div className="flex items-center gap-3">
                     <div className="w-11 h-11 rounded-lg bg-blue-100 flex items-center justify-center">
@@ -128,7 +142,10 @@ export default function Index() {
           <h2 className="text-3xl font-bold text-center mb-10 text-blue-900">Our Courses</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {courses.map((course, index) => (
-              <Card key={index} className="border border-blue-100 bg-white hover:shadow-lg hover:-translate-y-0.5 transition-all duration-300">
+              <Card
+                key={index}
+                className="border border-blue-100 bg-white hover:shadow-lg hover:-translate-y-0.5 transition-all duration-300"
+              >
                 <CardHeader className="bg-gradient-to-r from-blue-50 to-green-50">
                   <div className="flex items-center gap-3">
                     <div className="w-9 h-9 rounded-lg bg-green-100 flex items-center justify-center">
@@ -143,19 +160,27 @@ export default function Index() {
                     <div className="space-y-3 text-sm">
                       <p className="flex items-start gap-2">
                         <BookOpen className="w-4 h-4 text-blue-600 mt-1 flex-shrink-0" />
-                        <span><strong>Subjects:</strong> {course.subjects}</span>
+                        <span>
+                          <strong>Subjects:</strong> {course.subjects}
+                        </span>
                       </p>
                       <p className="flex items-start gap-2">
                         <Target className="w-4 h-4 text-blue-600 mt-1 flex-shrink-0" />
-                        <span><strong>Course Plan:</strong> {course.coursePlan}</span>
+                        <span>
+                          <strong>Course Plan:</strong> {course.coursePlan}
+                        </span>
                       </p>
                       <p className="flex items-start gap-2">
                         <Clock className="w-4 h-4 text-blue-600 mt-1 flex-shrink-0" />
-                        <span><strong>Duration:</strong> {course.duration}</span>
+                        <span>
+                          <strong>Duration:</strong> {course.duration}
+                        </span>
                       </p>
                       <p className="flex items-start gap-2">
                         <Clock className="w-4 h-4 text-blue-600 mt-1 flex-shrink-0" />
-                        <span><strong>Lecture Duration:</strong> {course.lectureDuration}</span>
+                        <span>
+                          <strong>Lecture Duration:</strong> {course.lectureDuration}
+                        </span>
                       </p>
                     </div>
                   </div>
@@ -202,32 +227,50 @@ export default function Index() {
           </div>
           <div className="bg-white rounded-xl border border-amber-200 shadow-sm p-8 space-y-4 text-gray-700 leading-relaxed">
             <h3 className="text-xl font-bold text-blue-900">Will NEET/JEE Courses Include Board Exam Coaching?</h3>
-            
-            <p>Many coaching classes claim to cover Board exam preparation within NEET/JEE courses, but in reality, independent effort by students is essential for scoring well in Board exams. <strong>Parents are requested to take note.</strong></p>
-            
-            <p>Board and competitive exams require different approaches and teaching styles, ideally handled by separate teaching teams. Given the vast NEET/JEE syllabus, the faculty may not have sufficient time to cover the Board syllabus comprehensively.</p>
-            
-            <p>That said, there is significant overlap in syllabus. A sincere and disciplined student usually does not need additional coaching for Boards. At <strong>Students' Classes</strong>, we support Board preparation in Std. XII by:</p>
-            
+
+            <p>
+              Many coaching classes claim to cover Board exam preparation within NEET/JEE courses, but in reality,
+              independent effort by students is essential for scoring well in Board exams.{" "}
+              <strong>Parents are requested to take note.</strong>
+            </p>
+
+            <p>
+              Board and competitive exams require different approaches and teaching styles, ideally handled by separate
+              teaching teams. Given the vast NEET/JEE syllabus, the faculty may not have sufficient time to cover the
+              Board syllabus comprehensively.
+            </p>
+
+            <p>
+              That said, there is significant overlap in syllabus. A sincere and disciplined student usually does not
+              need additional coaching for Boards. At <strong>Students' Classes</strong>, we support Board preparation
+              in Std. XII by:
+            </p>
+
             <ul className="list-disc list-inside space-y-1 pl-4">
               <li>Conducting dedicated lectures for Board guidance</li>
               <li>Holding subjective tests and Board prelims</li>
             </ul>
-            
+
             <h4 className="text-lg font-semibold text-blue-800 pt-2">Regarding Std. XI College Exams:</h4>
             <ul className="list-disc list-inside space-y-1 pl-4">
-              <li>Students in our batches come from different colleges, and college syllabi often differ from our schedule.</li>
+              <li>
+                Students in our batches come from different colleges, and college syllabi often differ from our
+                schedule.
+              </li>
               <li>We follow NCERT chapter sequence to align with entrance exam goals.</li>
               <li>As a result, our syllabus may not always match college test portions.</li>
             </ul>
-            
+
             <p>In such cases, our teachers offer extra revision support, provided:</p>
             <ul className="list-disc list-inside space-y-1 pl-4">
               <li>Students inform us of the mismatched topics</li>
               <li>Students are willing to attend sessions beyond regular hours.</li>
             </ul>
-            
-            <p className="font-semibold text-blue-900 pt-2">We are committed to our students' success, especially in competitive exams, which remain our primary focus.</p>
+
+            <p className="font-semibold text-blue-900 pt-2">
+              We are committed to our students' success, especially in competitive exams, which remain our primary
+              focus.
+            </p>
           </div>
         </div>
       </section>
