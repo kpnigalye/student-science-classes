@@ -17,25 +17,36 @@ export default function Index() {
 
   const courses = [
     {
-      title: "XI + XII + NEET/JEE",
-      description: "Integrated program for Board & NEET/JEE exam preparation",
-      timing: "Morning Batch: 7:00 AM - 10:00 AM\nEvening Batch: 5:00 PM - 8:00 PM",
-      subjects: "Physics, Chemistry, Mathematics(for JEE), Biology (For NEET)",
-      duration: "2 Years"
+      title: "XI + XII + NEET / JEE",
+      description: "A comprehensive program covering NEET/JEE entrance preparation + State Board syllabus",
+      subjects: "Physics, Chemistry, Biology / Maths (NCERT + State board)",
+      coursePlan: "Foundation + Concept clarity + Classroom practice + Test series + Doubt solving",
+      duration: "24 months",
+      lectureDuration: "7-8 Hours Daily (Integrated batch) & 4-5 hours daily (Regular batch)"
     },
     {
       title: "XI + XII + MHT-CET",
-      description: "Integrated program for Board & MHT-CET exam preparation",
-      timing: "Morning Batch: 7:00 AM - 11:00 AM\nEvening Batch: 5:00 PM - 9:00 PM",
-      subjects: "Physics, Chemistry, Mathematics, Biology",
-      duration: "2 Years"
+      description: "Ideal for students targeting MHT-CET for Engineering / Pharmacy admissions in Maharashtra",
+      subjects: "Physics, Chemistry, Biology, Maths (State board)",
+      coursePlan: "Foundation + Concept clarity + Classroom practice + Test series + Doubt solving",
+      duration: "24 months",
+      lectureDuration: "4-5 hours daily (Regular batch)"
     },
     {
-      title: "XI + XII",
-      description: "Focus on State Board curriculum and exam preparation",
-      timing: "Morning Batch: 7:00 AM - 9:00 AM\nEvening Batch: 6:00 PM - 8:00 PM",
-      subjects: "Physics, Chemistry, Mathematics, Biology",
-      duration: "2 Years"
+      title: "XI + XII State Board",
+      description: "For students focusing only on State board exams",
+      subjects: "Physics, Chemistry, Biology, Maths (State board)",
+      coursePlan: "Foundation + Concept clarity + Classroom practice + Test series + Doubt solving",
+      duration: "22 months",
+      lectureDuration: "3-4 hours daily (Regular batch)"
+    },
+    {
+      title: "Rank Booster (NEET/JEE Repeaters)",
+      description: "Accelerate your prep with targeted revision, high-impact practice, and expert mentorship. Ideal for repeaters and serious aspirants aiming for top ranks.",
+      subjects: "Physics, Chemistry, Biology/Mathematics",
+      coursePlan: "Foundation + Concept clarity + Classroom practice + Test series + Doubt solving",
+      duration: "10-12 months",
+      lectureDuration: "4-5 hours daily (Regular batch)"
     }
   ];
 
