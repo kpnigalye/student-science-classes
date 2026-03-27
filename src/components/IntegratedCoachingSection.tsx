@@ -197,7 +197,7 @@ export function IntegratedCoachingSection() {
               <CardHeader className="bg-gradient-to-r from-green-50 to-emerald-50">
                 <CardTitle className="text-lg text-green-800 flex items-center gap-2">
                   <Target className="w-5 h-5 text-green-600" />
-                  For Entrance Exams (Primary Focus)
+                  For Entrance Exams
                 </CardTitle>
               </CardHeader>
               <CardContent className="pt-5">
@@ -219,11 +219,10 @@ export function IntegratedCoachingSection() {
               <CardHeader className="bg-gradient-to-r from-blue-50 to-indigo-50">
                 <CardTitle className="text-lg text-blue-800 flex items-center gap-2">
                   <BookOpen className="w-5 h-5 text-blue-600" />
-                  For Board Exams (Supported Preparation)
+                  For Board Exams
                 </CardTitle>
               </CardHeader>
               <CardContent className="pt-5">
-                <p className="text-gray-600 mb-3 text-sm">We ensure students are well-prepared for Boards through:</p>
                 <ul className="space-y-3">
                   {[
                     "Dedicated Board guidance lectures (Std. XII)",
