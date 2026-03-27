@@ -6,7 +6,6 @@ import {
   Award,
   BrainCircuit,
   BadgeCheck,
-  AlertTriangle,
   GraduationCap,
   Star,
 } from "lucide-react";
@@ -14,6 +13,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import Logo from "@/components/Logo";
 import { Link } from "react-router-dom";
 import { CareerOptionsSection } from "@/components/CareerOptionsSection";
+import { IntegratedCoachingSection } from "@/components/IntegratedCoachingSection";
 
 export default function Index() {
   const whyChooseUs = [
@@ -110,27 +110,23 @@ export default function Index() {
       </section>
 
       {/* Why Choose Us */}
-      <section className="py-14 px-4">
+      <section className="py-16 px-4 bg-gradient-to-b from-slate-50 to-white">
         <div className="container mx-auto">
-          <h2 className="text-3xl font-bold text-center mb-10 text-blue-900">Why Choose Us?</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <h2 className="text-3xl font-bold text-center mb-3 text-blue-900">Why Choose Us?</h2>
+          <p className="text-center text-gray-500 mb-12 max-w-xl mx-auto">What sets Students' Classes apart</p>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {whyChooseUs.map((item, index) => (
-              <Card
+              <div
                 key={index}
-                className="border border-blue-100 bg-gradient-to-br from-white to-blue-50/50 hover:shadow-lg hover:-translate-y-0.5 transition-all duration-300"
+                className="relative group bg-white rounded-2xl p-6 shadow-md hover:shadow-xl hover:-translate-y-1 transition-all duration-300 border border-blue-100/60 overflow-hidden"
               >
-                <CardHeader>
-                  <div className="flex items-center gap-3">
-                    <div className="w-11 h-11 rounded-lg bg-blue-100 flex items-center justify-center">
-                      <item.icon className="w-6 h-6 text-blue-600" />
-                    </div>
-                    <CardTitle className="text-lg text-blue-900">{item.title}</CardTitle>
-                  </div>
-                </CardHeader>
-                <CardContent>
-                  <p className="text-gray-600">{item.description}</p>
-                </CardContent>
-              </Card>
+                <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-blue-500 to-indigo-500 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                <div className="w-14 h-14 rounded-2xl bg-gradient-to-br from-blue-100 to-indigo-100 flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300">
+                  <item.icon className="w-7 h-7 text-blue-600" />
+                </div>
+                <h3 className="text-lg font-bold text-blue-900 mb-2">{item.title}</h3>
+                <p className="text-gray-600 leading-relaxed">{item.description}</p>
+              </div>
             ))}
           </div>
         </div>
@@ -216,64 +212,7 @@ export default function Index() {
         </div>
       </section>
 
-      {/* Important Info Section */}
-      <section className="py-14 px-4 bg-amber-50/70">
-        <div className="container mx-auto max-w-4xl">
-          <div className="flex items-center justify-center gap-3 mb-8">
-            <div className="w-10 h-10 rounded-full bg-amber-100 flex items-center justify-center">
-              <AlertTriangle className="w-5 h-5 text-amber-600" />
-            </div>
-            <h2 className="text-3xl font-bold text-center text-blue-900">Important Information</h2>
-          </div>
-          <div className="bg-white rounded-xl border border-amber-200 shadow-sm p-8 space-y-4 text-gray-700 leading-relaxed">
-            <h3 className="text-xl font-bold text-blue-900">Will NEET/JEE Courses Include Board Exam Coaching?</h3>
-
-            <p>
-              Many coaching classes claim to cover Board exam preparation within NEET/JEE courses, but in reality,
-              independent effort by students is essential for scoring well in Board exams.{" "}
-              <strong>Parents are requested to take note.</strong>
-            </p>
-
-            <p>
-              Board and competitive exams require different approaches and teaching styles, ideally handled by separate
-              teaching teams. Given the vast NEET/JEE syllabus, the faculty may not have sufficient time to cover the
-              Board syllabus comprehensively.
-            </p>
-
-            <p>
-              That said, there is significant overlap in syllabus. A sincere and disciplined student usually does not
-              need additional coaching for Boards. At <strong>Students' Classes</strong>, we support Board preparation
-              in Std. XII by:
-            </p>
-
-            <ul className="list-disc list-inside space-y-1 pl-4">
-              <li>Conducting dedicated lectures for Board guidance</li>
-              <li>Holding subjective tests and Board prelims</li>
-            </ul>
-
-            <h4 className="text-lg font-semibold text-blue-800 pt-2">Regarding Std. XI College Exams:</h4>
-            <ul className="list-disc list-inside space-y-1 pl-4">
-              <li>
-                Students in our batches come from different colleges, and college syllabi often differ from our
-                schedule.
-              </li>
-              <li>In our NEET/JEE batches, we follow NCERT chapter sequence to align with entrance exam goals.</li>
-              <li>As a result, our syllabus may not always match college test portions.</li>
-            </ul>
-
-            <p>In such cases, our teachers offer extra revision support, provided:</p>
-            <ul className="list-disc list-inside space-y-1 pl-4">
-              <li>Students inform us of the mismatched topics</li>
-              <li>Students are willing to attend sessions beyond regular hours.</li>
-            </ul>
-
-            <p className="font-semibold text-blue-900 pt-2">
-              We are committed to our students' success, especially in competitive exams, which remain our primary
-              focus.
-            </p>
-          </div>
-        </div>
-      </section>
+      <IntegratedCoachingSection />
 
       <CareerOptionsSection />
     </div>
