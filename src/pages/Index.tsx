@@ -140,7 +140,7 @@ export default function Index() {
               <Card className="border border-blue-100 bg-white hover:shadow-lg transition-all duration-300 px-8 py-4">
                 <div className="flex items-center gap-3">
                   <GraduationCap className="w-6 h-6 text-blue-600" />
-                  <span className="text-lg font-semibold text-blue-900">Career Options after XI + XII</span>
+                  <span className="text-lg font-semibold text-blue-900">Career Options after XII</span>
                   <ArrowRight className="w-5 h-5 text-blue-600 group-hover:translate-x-1 transition-transform" />
                 </div>
               </Card>
