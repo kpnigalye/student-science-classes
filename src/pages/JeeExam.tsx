@@ -41,21 +41,31 @@ export default function JeeExam() {
             <p className="text-gray-600 max-w-3xl mx-auto">
               A national-level engineering entrance exam for admissions to IITs, NITs, IIITs, and reputed engineering colleges across India.
             </p>
-            <p className="text-gray-600 max-w-3xl mx-auto mt-3">
-              Objective of JEE-Mains is to categorise candidates suitable for sitting in JEE (Advanced) or gaining admission to a Bachelor of Engineering (BE) or Bachelor of Technology (BTech) undergraduate programme at one of the following types of institutions:
-            </p>
-            <ul className="text-gray-600 max-w-3xl mx-auto mt-2 text-left list-disc list-inside space-y-1">
-              <li>National Institutes of Technology (NITs)</li>
-              <li>Indian Institutes of Information Technology (IIITs)</li>
-              <li>Other Centrally Funded Technical Institutions (CFTIs)</li>
-              <li>State-funded or -recognised institutions and universities</li>
-            </ul>
-            <p className="text-gray-600 max-w-3xl mx-auto mt-3">
-              The JEE Advanced is similar to JEE-Main, but its questions are more thorough. Passage of the exam qualifies you for admittance to prestigious IITs.
-            </p>
           </div>
 
           <section className="space-y-8">
+            <Card className="border-2 border-blue-100 shadow-md hover:shadow-lg transition-shadow">
+              <CardHeader className="bg-gradient-to-r from-blue-50 to-indigo-50">
+                <div className="flex items-center gap-3">
+                  <BookOpen className="w-6 h-6 text-indigo-600" />
+                  <CardTitle className="text-xl text-blue-900">Exam Objective</CardTitle>
+                </div>
+              </CardHeader>
+              <CardContent className="pt-6">
+                <p className="text-gray-700 mb-4">
+                  Objective of JEE-Mains is to categorise candidates suitable for sitting in JEE (Advanced) or gaining admission to a Bachelor of Engineering (BE) or Bachelor of Technology (BTech) undergraduate programme at one of the following types of institutions:
+                </p>
+                <ul className="list-disc list-inside space-y-2 text-gray-700 mb-4">
+                  <li>National Institutes of Technology (NITs)</li>
+                  <li>Indian Institutes of Information Technology (IIITs)</li>
+                  <li>Other Centrally Funded Technical Institutions (CFTIs)</li>
+                  <li>State-funded or -recognised institutions and universities</li>
+                </ul>
+                <p className="text-gray-700">
+                  The JEE Advanced is similar to JEE-Main, but its questions are more thorough. Passage of the exam qualifies you for admittance to prestigious IITs.
+                </p>
+              </CardContent>
+            </Card>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               <Card className="border-2 border-blue-100 shadow-md hover:shadow-lg transition-shadow">
                 <CardHeader className="bg-gradient-to-r from-blue-50 to-purple-50">
