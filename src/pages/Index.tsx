@@ -110,27 +110,23 @@ export default function Index() {
       </section>
 
       {/* Why Choose Us */}
-      <section className="py-14 px-4">
+      <section className="py-16 px-4 bg-gradient-to-b from-slate-50 to-white">
         <div className="container mx-auto">
-          <h2 className="text-3xl font-bold text-center mb-10 text-blue-900">Why Choose Us?</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <h2 className="text-3xl font-bold text-center mb-3 text-blue-900">Why Choose Us?</h2>
+          <p className="text-center text-gray-500 mb-12 max-w-xl mx-auto">What sets Students' Classes apart</p>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {whyChooseUs.map((item, index) => (
-              <Card
+              <div
                 key={index}
-                className="border border-blue-100 bg-gradient-to-br from-white to-blue-50/50 hover:shadow-lg hover:-translate-y-0.5 transition-all duration-300"
+                className="relative group bg-white rounded-2xl p-6 shadow-md hover:shadow-xl hover:-translate-y-1 transition-all duration-300 border border-blue-100/60 overflow-hidden"
               >
-                <CardHeader>
-                  <div className="flex items-center gap-3">
-                    <div className="w-11 h-11 rounded-lg bg-blue-100 flex items-center justify-center">
-                      <item.icon className="w-6 h-6 text-blue-600" />
-                    </div>
-                    <CardTitle className="text-lg text-blue-900">{item.title}</CardTitle>
-                  </div>
-                </CardHeader>
-                <CardContent>
-                  <p className="text-gray-600">{item.description}</p>
-                </CardContent>
-              </Card>
+                <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-blue-500 to-indigo-500 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                <div className="w-14 h-14 rounded-2xl bg-gradient-to-br from-blue-100 to-indigo-100 flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300">
+                  <item.icon className="w-7 h-7 text-blue-600" />
+                </div>
+                <h3 className="text-lg font-bold text-blue-900 mb-2">{item.title}</h3>
+                <p className="text-gray-600 leading-relaxed">{item.description}</p>
+              </div>
             ))}
           </div>
         </div>
