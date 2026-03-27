@@ -1,5 +1,5 @@
 
-import { GraduationCap, Users, BookOpen, Target, Clock, Award, BrainCircuit, BadgeCheck, AlertTriangle } from "lucide-react";
+import { Users, BookOpen, Target, Clock, Award, BrainCircuit, BadgeCheck, AlertTriangle, GraduationCap, Star } from "lucide-react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import Logo from "@/components/Logo";
 import { Link } from "react-router-dom";
@@ -61,29 +61,47 @@ export default function Index() {
   ];
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-[#f8f9fa] to-white">
+    <div className="min-h-screen bg-gradient-to-b from-slate-50 to-white">
       <header className="py-6 px-4 bg-white shadow-sm">
         <Logo />
       </header>
 
-      <section className="py-16 px-4 bg-gradient-to-r from-blue-900 to-blue-700 text-white">
-        <div className="container mx-auto text-center">
-          <GraduationCap className="w-16 h-16 mx-auto mb-6 animate-bounce" />
-          <h1 className="text-5xl md:text-6xl font-bold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-yellow-200 via-yellow-300 to-yellow-400 animate-pulse">
-            Celebrating 45th Year of Excellence
+      {/* Hero Banner */}
+      <section className="relative py-12 px-4 bg-gradient-to-br from-blue-950 via-blue-900 to-indigo-900 text-white overflow-hidden">
+        <div className="absolute inset-0 opacity-10">
+          <div className="absolute top-4 left-8 w-24 h-24 border-2 border-yellow-300 rounded-full" />
+          <div className="absolute bottom-4 right-12 w-32 h-32 border-2 border-yellow-300 rounded-full" />
+          <div className="absolute top-1/2 left-1/3 w-16 h-16 border border-yellow-300 rounded-full" />
+        </div>
+        <div className="container mx-auto text-center relative z-10">
+          <div className="inline-flex items-center gap-2 bg-yellow-400/20 border border-yellow-400/40 rounded-full px-5 py-2 mb-5">
+            <Star className="w-4 h-4 text-yellow-300 fill-yellow-300" />
+            <span className="text-yellow-200 text-sm font-medium tracking-wide uppercase">Since 1980</span>
+            <Star className="w-4 h-4 text-yellow-300 fill-yellow-300" />
+          </div>
+          <h1 className="text-4xl md:text-5xl font-bold mb-3">
+            <span className="bg-gradient-to-r from-yellow-200 via-yellow-300 to-amber-400 bg-clip-text text-transparent">
+              Celebrating 45th Year
+            </span>
           </h1>
+          <p className="text-xl md:text-2xl font-light text-blue-200 tracking-wide">
+            of Excellence in Science Education
+          </p>
         </div>
       </section>
 
-      <section className="py-16 px-4">
+      {/* Why Choose Us */}
+      <section className="py-14 px-4">
         <div className="container mx-auto">
-          <h2 className="text-3xl font-bold text-center mb-12 text-blue-900">Why Choose Us?</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <h2 className="text-3xl font-bold text-center mb-10 text-blue-900">Why Choose Us?</h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {whyChooseUs.map((item, index) => (
-              <Card key={index} className="border-2 border-blue-100 bg-gradient-to-r from-blue-50 to-purple-50 hover:shadow-lg transition-shadow">
+              <Card key={index} className="border border-blue-100 bg-gradient-to-br from-white to-blue-50/50 hover:shadow-lg hover:-translate-y-0.5 transition-all duration-300">
                 <CardHeader>
                   <div className="flex items-center gap-3">
-                    <item.icon className="w-10 h-10 text-blue-600" />
+                    <div className="w-11 h-11 rounded-lg bg-blue-100 flex items-center justify-center">
+                      <item.icon className="w-6 h-6 text-blue-600" />
+                    </div>
                     <CardTitle className="text-lg text-blue-900">{item.title}</CardTitle>
                   </div>
                 </CardHeader>
@@ -96,22 +114,25 @@ export default function Index() {
         </div>
       </section>
 
-      <section className="py-16 px-4 bg-gray-50">
+      {/* Our Courses */}
+      <section className="py-14 px-4 bg-slate-50">
         <div className="container mx-auto">
-          <h2 className="text-3xl font-bold text-center mb-12 text-blue-900">Our Courses</h2>
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+          <h2 className="text-3xl font-bold text-center mb-10 text-blue-900">Our Courses</h2>
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
             {courses.map((course, index) => (
-              <Card key={index} className="border-2 border-blue-100 bg-gradient-to-r from-blue-50 to-green-50 hover:shadow-lg transition-shadow">
-                <CardHeader>
+              <Card key={index} className="border border-blue-100 bg-white hover:shadow-lg hover:-translate-y-0.5 transition-all duration-300">
+                <CardHeader className="bg-gradient-to-r from-blue-50 to-green-50">
                   <div className="flex items-center gap-3">
-                    <BookOpen className="w-6 h-6 text-green-600 flex-shrink-0" />
+                    <div className="w-9 h-9 rounded-lg bg-green-100 flex items-center justify-center">
+                      <BookOpen className="w-5 h-5 text-green-600" />
+                    </div>
                     <CardTitle className="text-2xl font-bold text-blue-900">{course.title}</CardTitle>
                   </div>
                 </CardHeader>
-                <CardContent>
+                <CardContent className="pt-5">
                   <div className="space-y-4">
                     <p className="text-gray-600">{course.description}</p>
-                    <div className="space-y-2 text-sm">
+                    <div className="space-y-3 text-sm">
                       <p className="flex items-start gap-2">
                         <Clock className="w-4 h-4 text-blue-600 mt-1 flex-shrink-0" />
                         <span>
@@ -137,19 +158,22 @@ export default function Index() {
         </div>
       </section>
 
-      <section className="py-16 px-4">
+      {/* Entrance Exams */}
+      <section className="py-14 px-4">
         <div className="container mx-auto">
-          <h2 className="text-3xl font-bold text-center mb-12 text-blue-900">Entrance Exams</h2>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto">
+          <h2 className="text-3xl font-bold text-center mb-10 text-blue-900">Entrance Exams</h2>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-4xl mx-auto">
             {entranceExams.map((exam, index) => (
-              <Link key={index} to={exam.link} className="block">
-                <Card className="border-2 border-blue-100 bg-gradient-to-r from-blue-50 to-orange-50 hover:shadow-lg transition-shadow h-full text-center">
+              <Link key={index} to={exam.link} className="block group">
+                <Card className="border border-blue-100 bg-white hover:shadow-lg hover:-translate-y-1 transition-all duration-300 h-full text-center">
                   <CardHeader>
                     <div className="flex flex-col items-center gap-2">
-                      <GraduationCap className="w-8 h-8 text-orange-600" />
+                      <div className="w-12 h-12 rounded-full bg-orange-100 flex items-center justify-center group-hover:bg-orange-200 transition-colors">
+                        <GraduationCap className="w-6 h-6 text-orange-600" />
+                      </div>
                       <CardTitle className="text-[30px] font-bold text-blue-900">{exam.title}</CardTitle>
-                      <p className="text-lg text-gray-700">{exam.subtitle}</p>
-                      <p className="text-sm text-gray-600">{exam.description}</p>
+                      <p className="text-base text-gray-700">{exam.subtitle}</p>
+                      <p className="text-sm text-gray-500">{exam.description}</p>
                     </div>
                   </CardHeader>
                 </Card>
@@ -160,13 +184,15 @@ export default function Index() {
       </section>
 
       {/* Important Info Section */}
-      <section className="py-16 px-4 bg-amber-50">
+      <section className="py-14 px-4 bg-amber-50/70">
         <div className="container mx-auto max-w-4xl">
           <div className="flex items-center justify-center gap-3 mb-8">
-            <AlertTriangle className="w-8 h-8 text-amber-600" />
+            <div className="w-10 h-10 rounded-full bg-amber-100 flex items-center justify-center">
+              <AlertTriangle className="w-5 h-5 text-amber-600" />
+            </div>
             <h2 className="text-3xl font-bold text-center text-blue-900">Important Information</h2>
           </div>
-          <div className="bg-white rounded-lg border-2 border-amber-200 shadow-md p-8 space-y-4 text-gray-700 leading-relaxed">
+          <div className="bg-white rounded-xl border border-amber-200 shadow-sm p-8 space-y-4 text-gray-700 leading-relaxed">
             <h3 className="text-xl font-bold text-blue-900">Will NEET/JEE Courses Include Board Exam Coaching?</h3>
             
             <p>Many coaching classes claim to cover Board exam preparation within NEET/JEE courses, but in reality, independent effort by students is essential for scoring well in Board exams. <strong>Parents are requested to take note.</strong></p>
