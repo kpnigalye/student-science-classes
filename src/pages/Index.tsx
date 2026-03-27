@@ -76,7 +76,7 @@ export default function Index() {
         <div className="container mx-auto text-center relative z-10">
           <div className="inline-flex items-center gap-2 bg-yellow-400/20 border border-yellow-400/40 rounded-full px-5 py-2 mb-5">
             <Star className="w-4 h-4 text-yellow-300 fill-yellow-300" />
-            <span className="text-yellow-200 text-sm font-medium tracking-wide uppercase">Since 1980</span>
+            <span className="text-yellow-200 text-sm font-medium tracking-wide uppercase">Since 1981</span>
             <Star className="w-4 h-4 text-yellow-300 fill-yellow-300" />
           </div>
           <h1 className="text-4xl md:text-5xl font-bold mb-3">
