@@ -6,7 +6,6 @@ import {
   Award,
   BrainCircuit,
   BadgeCheck,
-  AlertTriangle,
   GraduationCap,
   Star,
 } from "lucide-react";
@@ -14,6 +13,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import Logo from "@/components/Logo";
 import { Link } from "react-router-dom";
 import { CareerOptionsSection } from "@/components/CareerOptionsSection";
+import { IntegratedCoachingSection } from "@/components/IntegratedCoachingSection";
 
 export default function Index() {
   const whyChooseUs = [
