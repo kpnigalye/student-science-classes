@@ -17,25 +17,36 @@ export default function Index() {
 
   const courses = [
     {
-      title: "XI + XII + NEET/JEE",
-      description: "Integrated program for Board & NEET/JEE exam preparation",
-      timing: "Morning Batch: 7:00 AM - 10:00 AM\nEvening Batch: 5:00 PM - 8:00 PM",
-      subjects: "Physics, Chemistry, Mathematics(for JEE), Biology (For NEET)",
-      duration: "2 Years"
+      title: "XI + XII + NEET / JEE",
+      description: "A comprehensive program covering NEET/JEE entrance preparation + State Board syllabus",
+      subjects: "Physics, Chemistry, Biology / Maths (NCERT + State board)",
+      coursePlan: "Foundation + Concept clarity + Classroom practice + Test series + Doubt solving",
+      duration: "24 months",
+      lectureDuration: "7-8 Hours Daily (Integrated batch) & 4-5 hours daily (Regular batch)"
     },
     {
       title: "XI + XII + MHT-CET",
-      description: "Integrated program for Board & MHT-CET exam preparation",
-      timing: "Morning Batch: 7:00 AM - 11:00 AM\nEvening Batch: 5:00 PM - 9:00 PM",
-      subjects: "Physics, Chemistry, Mathematics, Biology",
-      duration: "2 Years"
+      description: "Ideal for students targeting MHT-CET for Engineering / Pharmacy admissions in Maharashtra",
+      subjects: "Physics, Chemistry, Biology, Maths (State board)",
+      coursePlan: "Foundation + Concept clarity + Classroom practice + Test series + Doubt solving",
+      duration: "24 months",
+      lectureDuration: "4-5 hours daily (Regular batch)"
     },
     {
-      title: "XI + XII",
-      description: "Focus on State Board curriculum and exam preparation",
-      timing: "Morning Batch: 7:00 AM - 9:00 AM\nEvening Batch: 6:00 PM - 8:00 PM",
-      subjects: "Physics, Chemistry, Mathematics, Biology",
-      duration: "2 Years"
+      title: "XI + XII State Board",
+      description: "For students focusing only on State board exams",
+      subjects: "Physics, Chemistry, Biology, Maths (State board)",
+      coursePlan: "Foundation + Concept clarity + Classroom practice + Test series + Doubt solving",
+      duration: "22 months",
+      lectureDuration: "3-4 hours daily (Regular batch)"
+    },
+    {
+      title: "Rank Booster (NEET/JEE Repeaters)",
+      description: "Accelerate your prep with targeted revision, high-impact practice, and expert mentorship. Ideal for repeaters and serious aspirants aiming for top ranks.",
+      subjects: "Physics, Chemistry, Biology/Mathematics",
+      coursePlan: "Foundation + Concept clarity + Classroom practice + Test series + Doubt solving",
+      duration: "10-12 months",
+      lectureDuration: "4-5 hours daily (Regular batch)"
     }
   ];
 
@@ -76,7 +87,7 @@ export default function Index() {
         <div className="container mx-auto text-center relative z-10">
           <div className="inline-flex items-center gap-2 bg-yellow-400/20 border border-yellow-400/40 rounded-full px-5 py-2 mb-5">
             <Star className="w-4 h-4 text-yellow-300 fill-yellow-300" />
-            <span className="text-yellow-200 text-sm font-medium tracking-wide uppercase">Since 1980</span>
+            <span className="text-yellow-200 text-sm font-medium tracking-wide uppercase">Since 1981</span>
             <Star className="w-4 h-4 text-yellow-300 fill-yellow-300" />
           </div>
           <h1 className="text-4xl md:text-5xl font-bold mb-3">
@@ -84,9 +95,6 @@ export default function Index() {
               Celebrating 45th Year
             </span>
           </h1>
-          <p className="text-xl md:text-2xl font-light text-blue-200 tracking-wide">
-            of Excellence in Science Education
-          </p>
         </div>
       </section>
 
@@ -118,7 +126,7 @@ export default function Index() {
       <section className="py-14 px-4 bg-slate-50">
         <div className="container mx-auto">
           <h2 className="text-3xl font-bold text-center mb-10 text-blue-900">Our Courses</h2>
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {courses.map((course, index) => (
               <Card key={index} className="border border-blue-100 bg-white hover:shadow-lg hover:-translate-y-0.5 transition-all duration-300">
                 <CardHeader className="bg-gradient-to-r from-blue-50 to-green-50">
@@ -134,20 +142,20 @@ export default function Index() {
                     <p className="text-gray-600">{course.description}</p>
                     <div className="space-y-3 text-sm">
                       <p className="flex items-start gap-2">
-                        <Clock className="w-4 h-4 text-blue-600 mt-1 flex-shrink-0" />
-                        <span>
-                          {course.timing.split('\n').map((time, i) => (
-                            <span key={i} className="block">{time}</span>
-                          ))}
-                        </span>
-                      </p>
-                      <p className="flex items-start gap-2">
                         <BookOpen className="w-4 h-4 text-blue-600 mt-1 flex-shrink-0" />
-                        <span>{course.subjects}</span>
+                        <span><strong>Subjects:</strong> {course.subjects}</span>
                       </p>
                       <p className="flex items-start gap-2">
                         <Target className="w-4 h-4 text-blue-600 mt-1 flex-shrink-0" />
-                        <span>Duration: {course.duration}</span>
+                        <span><strong>Course Plan:</strong> {course.coursePlan}</span>
+                      </p>
+                      <p className="flex items-start gap-2">
+                        <Clock className="w-4 h-4 text-blue-600 mt-1 flex-shrink-0" />
+                        <span><strong>Duration:</strong> {course.duration}</span>
+                      </p>
+                      <p className="flex items-start gap-2">
+                        <Clock className="w-4 h-4 text-blue-600 mt-1 flex-shrink-0" />
+                        <span><strong>Lecture Duration:</strong> {course.lectureDuration}</span>
                       </p>
                     </div>
                   </div>
