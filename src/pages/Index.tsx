@@ -257,7 +257,7 @@ export default function Index() {
                 Students in our batches come from different colleges, and college syllabi often differ from our
                 schedule.
               </li>
-              <li>We follow NCERT chapter sequence to align with entrance exam goals.</li>
+              <li>In our NEET/JEE batches, we follow NCERT chapter sequence to align with entrance exam goals.</li>
               <li>As a result, our syllabus may not always match college test portions.</li>
             </ul>
 
