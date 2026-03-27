@@ -57,8 +57,7 @@ export default function Index() {
       {/* Why Choose Us */}
       <section className="py-16 px-4 bg-gradient-to-b from-slate-50 to-white">
         <div className="container mx-auto">
-          <h2 className="text-3xl font-bold text-center mb-3 text-blue-900">Why Choose Us?</h2>
-          <p className="text-center text-gray-500 mb-12 max-w-xl mx-auto">What sets Students' Classes apart</p>
+          <h2 className="text-3xl font-bold text-center mb-3 text-blue-900">What sets Students' Classes apart?</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {whyChooseUs.map((item, index) => (
               <div
@@ -81,8 +80,6 @@ export default function Index() {
       <section className="py-14 px-4 bg-slate-50">
         <div className="container mx-auto">
           <h2 className="text-3xl font-bold text-center mb-3 text-blue-900">Our Courses</h2>
-          <p className="text-center text-gray-500 mb-12 max-w-xl mx-auto">Choose your stream</p>
-
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-4xl mx-auto">
             {/* IX-X Coming Soon */}
             <Card className="border border-gray-200 bg-gray-50 h-full opacity-75">
@@ -126,7 +123,7 @@ export default function Index() {
                   <Palette className="w-7 h-7 text-gray-400" />
                 </div>
                 <CardTitle className="text-xl font-bold text-gray-500">Commerce & Arts</CardTitle>
-                <p className="text-sm text-gray-400">XI – XII</p>
+                <p className="text-sm text-gray-400">XI – XII Commerce & Arts Stream</p>
               </CardHeader>
               <CardContent className="text-center">
                 <div className="inline-flex items-center gap-1.5 bg-amber-100 border border-amber-200 text-amber-700 text-xs font-semibold px-3 py-1.5 rounded-full">
