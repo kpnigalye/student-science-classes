@@ -9,6 +9,8 @@ import NotFound from "./pages/NotFound";
 import NeetExam from "./pages/NeetExam";
 import JeeExam from "./pages/JeeExam";
 import CetExam from "./pages/CetExam";
+import Science from "./pages/Science";
+import CareerOptions from "./pages/CareerOptions";
 import { ScrollToTop } from "./components/ScrollToTop";
 import { WhatsAppChat } from "./components/WhatsAppChat";
 import { ScrollToTopOnNavigation } from "./components/ScrollToTopOnNavigation";
@@ -25,8 +27,11 @@ const App = () => (
         <ScrollToTopOnNavigation />
         <Routes>
           <Route path="/" element={<Index />} />
+          <Route path="/science" element={<Science />} />
+          <Route path="/career-options" element={<CareerOptions />} />
           <Route path="/neet" element={<NeetExam />} />
           <Route path="/jee" element={<JeeExam />} />
+          <Route path="/cet" element={<CetExam />} />
           <Route path="/cet" element={<CetExam />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
