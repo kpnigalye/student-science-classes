@@ -27,8 +27,11 @@ const App = () => (
         <ScrollToTopOnNavigation />
         <Routes>
           <Route path="/" element={<Index />} />
+          <Route path="/science" element={<Science />} />
+          <Route path="/career-options" element={<CareerOptions />} />
           <Route path="/neet" element={<NeetExam />} />
           <Route path="/jee" element={<JeeExam />} />
+          <Route path="/cet" element={<CetExam />} />
           <Route path="/cet" element={<CetExam />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
