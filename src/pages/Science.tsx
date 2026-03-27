@@ -1,10 +1,4 @@
-import {
-  BookOpen,
-  Target,
-  Clock,
-  GraduationCap,
-  ArrowRight,
-} from "lucide-react";
+import { BookOpen, Target, Clock, GraduationCap, ArrowRight } from "lucide-react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import Logo from "@/components/Logo";
 import { Link } from "react-router-dom";
@@ -38,7 +32,8 @@ export default function Science() {
     },
     {
       title: "Rank Booster (NEET/JEE Repeaters)",
-      description: "Accelerate your prep with targeted revision, high-impact practice, and expert mentorship. Ideal for repeaters and serious aspirants aiming for top ranks.",
+      description:
+        "Accelerate your prep with targeted revision, high-impact practice, and expert mentorship. Ideal for repeaters and serious aspirants aiming for top ranks.",
       subjects: "Physics, Chemistry, Biology/Mathematics",
       coursePlan: "Foundation + Concept clarity + Classroom practice + Test series + Doubt solving",
       duration: "10-12 months",
@@ -77,7 +72,9 @@ export default function Science() {
       <section className="py-12 px-4 bg-gradient-to-br from-blue-950 via-blue-900 to-indigo-900 text-white">
         <div className="container mx-auto text-center">
           <div className="inline-flex items-center gap-2 mb-4">
-            <Link to="/" className="text-blue-300 hover:text-white transition-colors text-sm">Home</Link>
+            <Link to="/" className="text-blue-300 hover:text-white transition-colors text-sm">
+              Home
+            </Link>
             <ArrowRight className="w-3 h-3 text-blue-400" />
             <span className="text-white text-sm font-medium">Science</span>
           </div>
@@ -92,7 +89,6 @@ export default function Science() {
       <section className="py-14 px-4">
         <div className="container mx-auto">
           <h2 className="text-3xl font-bold text-center mb-3 text-blue-900">Our Batches</h2>
-          <p className="text-center text-gray-500 mb-10 max-w-lg mx-auto">Choose the batch that suits your goals</p>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {scienceCourses.map((course, index) => (
               <Card
@@ -113,19 +109,27 @@ export default function Science() {
                     <div className="space-y-3 text-sm">
                       <p className="flex items-start gap-2">
                         <BookOpen className="w-4 h-4 text-blue-600 mt-1 flex-shrink-0" />
-                        <span><strong>Subjects:</strong> {course.subjects}</span>
+                        <span>
+                          <strong>Subjects:</strong> {course.subjects}
+                        </span>
                       </p>
                       <p className="flex items-start gap-2">
                         <Target className="w-4 h-4 text-blue-600 mt-1 flex-shrink-0" />
-                        <span><strong>Course Plan:</strong> {course.coursePlan}</span>
+                        <span>
+                          <strong>Course Plan:</strong> {course.coursePlan}
+                        </span>
                       </p>
                       <p className="flex items-start gap-2">
                         <Clock className="w-4 h-4 text-blue-600 mt-1 flex-shrink-0" />
-                        <span><strong>Duration:</strong> {course.duration}</span>
+                        <span>
+                          <strong>Duration:</strong> {course.duration}
+                        </span>
                       </p>
                       <p className="flex items-start gap-2">
                         <Clock className="w-4 h-4 text-blue-600 mt-1 flex-shrink-0" />
-                        <span><strong>Lecture Duration:</strong> {course.lectureDuration}</span>
+                        <span>
+                          <strong>Lecture Duration:</strong> {course.lectureDuration}
+                        </span>
                       </p>
                     </div>
                   </div>
