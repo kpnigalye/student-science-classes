@@ -13,8 +13,7 @@ import {
 } from "lucide-react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 
-const WHATSAPP_URL =
-  "https://wa.me/918097740318?text=Hi%2C%20I%20would%20like%20to%20know%20more%20about%20the%20integrated%20batches.";
+const WHATSAPP_URL = "https://wa.me/918097740318?text=Hi%2C%20I%20would%20like%20to%20know%20more%20about%20the%20integrated%20batches.";
 
 function CTAButton({ children }: { children: React.ReactNode }) {
   return (
@@ -45,55 +44,41 @@ export function IntegratedCoachingSection() {
           </h2>
           <div className="space-y-6 text-blue-100 text-lg leading-relaxed">
             <p>
-              In recent years, the academic landscape after Class 10 has changed significantly. Students are no longer
-              preparing only for Board exams. They are simultaneously expected to perform well in competitive exams like{" "}
-              <strong className="text-white">NEET, JEE, and MHT-CET</strong>. These exams demand Strong conceptual
-              understanding, Regular practice and testing, Long-term, structured preparation.
+              In recent years, the academic landscape after Class 10 has changed significantly. Students are no longer preparing only for Board exams — they are simultaneously expected to perform well in competitive exams like <strong className="text-white">NEET, JEE, and MHT-CET</strong>.
             </p>
-            <p className="text-center font-medium text-yellow-200">
-              Because of this, starting preparation early (from Std. XI) has become essential — not optional.
-            </p>
-          </div>
+            <div className="space-y-6 text-blue-100 text-lg leading-relaxed">
+              <p>
+                In recent years, the academic landscape after Class 10 has changed significantly. Students are no longer
+                preparing only for Board exams. They are simultaneously expected to perform well in competitive exams like{" "}
+                <strong className="text-white">NEET, JEE, and MHT-CET</strong>. These exams demand Strong conceptual
+                understanding, Regular practice and testing, Long-term, structured preparation.
+              </p>
+              <p className="text-center font-medium text-yellow-200">
+                Because of this, starting preparation early (from Std. XI) has become essential — not optional.
+              </p>
+            </div>
         </div>
       </section>
 
       {/* Section 2: Why Integrated Preparation is Necessary */}
       <section className="py-14 px-4 bg-slate-50">
         <div className="container mx-auto max-w-4xl">
+          <div className="flex items-center justify-center gap-3 mb-8">
+            <div className="w-10 h-10 rounded-full bg-blue-100 flex items-center justify-center">
+              <Target className="w-5 h-5 text-blue-600" />
+            </div>
+            <h3 className="text-2xl md:text-3xl font-bold text-blue-900">
+              Why Integrated Preparation is Necessary?
+            </h3>
+          </div>
           <Card className="border-0 shadow-lg">
             <CardContent className="p-8">
               <p className="text-gray-700 mb-6 text-lg leading-relaxed">
-                Traditionally, students prepare for Boards and Entrance exams separately. However, this often leads to:
+                Traditionally, students prepare for Board exams and Entrance exams separately. However, this approach often leads to a lack of time, confusion between different study methods, incomplete syllabus coverage, and increased stress during Std. XII.
               </p>
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8">
-                {[
-                  "Lack of time",
-                  "Confusion between different study approaches",
-                  "Incomplete syllabus coverage",
-                  "Increased stress in Std. XII",
-                ].map((item) => (
-                  <div key={item} className="flex items-center gap-3 bg-red-50 border border-red-100 rounded-lg p-4">
-                    <XCircle className="w-5 h-5 text-red-500 flex-shrink-0" />
-                    <span className="text-gray-700 font-medium">{item}</span>
-                  </div>
-                ))}
-              </div>
-              <div className="bg-green-50 border border-green-200 rounded-xl p-6">
-                <p className="text-gray-800 font-semibold text-lg mb-4">
-                  Integrated batches solve this problem by combining:
-                </p>
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-                  {["Board syllabus preparation", "Entrance exam preparation", "Regular testing and revision"].map(
-                    (item) => (
-                      <div key={item} className="flex items-center gap-3">
-                        <CheckCircle className="w-5 h-5 text-green-600 flex-shrink-0" />
-                        <span className="text-gray-700">{item}</span>
-                      </div>
-                    ),
-                  )}
-                </div>
-                <p className="text-green-800 font-medium mt-4">All within a single, well-planned system.</p>
-              </div>
+              <p className="text-gray-700 mb-6 text-lg leading-relaxed">
+                Integrated batches are designed to solve these challenges by combining Board syllabus preparation and Entrance exam preparation into a single, well-structured system. Along with this, students benefit from regular testing and revision, ensuring consistent progress and better understanding throughout the academic journey.
+              </p>
               <div className="mt-8 text-center">
                 <CTAButton>Talk to an Academic Counsellor</CTAButton>
               </div>
@@ -165,25 +150,28 @@ export function IntegratedCoachingSection() {
             <div className="w-10 h-10 rounded-full bg-amber-100 flex items-center justify-center">
               <AlertCircle className="w-5 h-5 text-amber-600" />
             </div>
-            <h3 className="text-2xl md:text-3xl font-bold text-blue-900">Important Clarification for Parents</h3>
+            <h3 className="text-2xl md:text-3xl font-bold text-blue-900">
+              Important Clarification for Parents
+            </h3>
           </div>
           <Card className="border border-amber-200 shadow-md">
             <CardContent className="p-8 space-y-5">
               <p className="text-gray-700 text-lg leading-relaxed">
                 Many coaching institutes claim that their NEET/JEE courses automatically cover Board preparation.
               </p>
-              <div className="bg-amber-50 border border-amber-200 rounded-xl p-5">
-                <p className="text-gray-800 font-medium text-lg">
-                  In reality, <strong>independent effort from students is essential</strong> to score well in Board
-                  exams.
-                </p>
-              </div>
-              <p className="text-gray-700 text-lg">Also,</p>
               <div className="bg-blue-50 border border-blue-200 rounded-xl p-5">
-                <p className="text-blue-900 text-lg leading-relaxed">
-                  Board and Entrance preparation require <strong>different teaching styles and focus</strong>, which
-                  ideally need separate planning and attention.
-                </p>
+                <div>
+                  <CheckCircle className="w-4 h-4 text-green-500 flex-shrink-0" />
+                  <p className="text-gray-800 font-medium text-lg">
+                    <strong>Independent effort from students is essential</strong> to score well in Board exams.
+                  </p>
+                </div>
+                <div>
+                  <CheckCircle className="w-4 h-4 text-green-500 flex-shrink-0" />
+                  <p className="text-blue-900 text-lg leading-relaxed">
+                    Board and Entrance preparation require <strong>different teaching styles and focus</strong>, which ideally need separate planning and attention.
+                  </p>
+                </div>
               </div>
               <div className="pt-4 text-center">
                 <CTAButton>Understand Our Teaching Approach</CTAButton>
@@ -200,11 +188,11 @@ export function IntegratedCoachingSection() {
             <div className="w-10 h-10 rounded-full bg-green-100 flex items-center justify-center">
               <Rocket className="w-5 h-5 text-green-600" />
             </div>
-            <h3 className="text-2xl md:text-3xl font-bold text-blue-900">Our Approach at Students' Classes</h3>
+            <h3 className="text-2xl md:text-3xl font-bold text-blue-900">
+              Our Approach at Students' Classes
+            </h3>
           </div>
-          <p className="text-center text-gray-600 text-lg mb-8">
-            At Students' Classes, we follow a balanced and practical approach:
-          </p>
+          <p className="text-center text-gray-600 text-lg mb-8">At Students' Classes, we follow a balanced and practical approach:</p>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
             <Card className="border-2 border-green-200 shadow-md">
               <CardHeader className="bg-gradient-to-r from-green-50 to-emerald-50">
@@ -270,7 +258,9 @@ export function IntegratedCoachingSection() {
             <div className="w-10 h-10 rounded-full bg-purple-100 flex items-center justify-center">
               <School className="w-5 h-5 text-purple-600" />
             </div>
-            <h3 className="text-2xl md:text-3xl font-bold text-blue-900">About Std. XI College Exams</h3>
+            <h3 className="text-2xl md:text-3xl font-bold text-blue-900">
+              About Std. XI College Exams
+            </h3>
           </div>
           <Card className="border-0 shadow-lg">
             <CardContent className="p-8 space-y-5">
@@ -287,18 +277,13 @@ export function IntegratedCoachingSection() {
                 ))}
               </div>
               <div className="bg-amber-50 border border-amber-200 rounded-xl p-5">
-                <p className="text-gray-800 font-medium">
-                  Because of this, college test portions may not always match our schedule.
-                </p>
+                <p className="text-gray-800 font-medium">Because of this, college test portions may not always match our schedule.</p>
               </div>
 
               <h4 className="text-lg font-semibold text-blue-900 pt-2">How We Support Students:</h4>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                 {["Extra revision sessions for mismatched topics", "Personal guidance from teachers"].map((item) => (
-                  <div
-                    key={item}
-                    className="flex items-center gap-3 bg-green-50 border border-green-100 rounded-lg p-4"
-                  >
+                  <div key={item} className="flex items-center gap-3 bg-green-50 border border-green-100 rounded-lg p-4">
                     <CheckCircle className="w-5 h-5 text-green-500 flex-shrink-0" />
                     <span className="text-gray-700 font-medium">{item}</span>
                   </div>
@@ -307,10 +292,7 @@ export function IntegratedCoachingSection() {
 
               <h4 className="text-lg font-semibold text-blue-900 pt-2">Condition:</h4>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                {[
-                  "Students must inform us in advance",
-                  "Students should be willing to attend extra sessions beyond regular hours",
-                ].map((item) => (
+                {["Students must inform us in advance", "Students should be willing to attend extra sessions beyond regular hours"].map((item) => (
                   <div key={item} className="flex items-center gap-3 bg-blue-50 border border-blue-100 rounded-lg p-4">
                     <MessageCircle className="w-5 h-5 text-blue-500 flex-shrink-0" />
                     <span className="text-gray-700 font-medium">{item}</span>
@@ -333,15 +315,15 @@ export function IntegratedCoachingSection() {
             <div className="w-10 h-10 rounded-full bg-yellow-400/20 flex items-center justify-center">
               <Heart className="w-5 h-5 text-yellow-300" />
             </div>
-            <h3 className="text-2xl md:text-3xl font-bold">Our Commitment</h3>
+            <h3 className="text-2xl md:text-3xl font-bold">
+              Our Commitment
+            </h3>
           </div>
           <p className="text-blue-100 text-lg mb-8 max-w-2xl mx-auto leading-relaxed">
             We are fully committed to our students' success.
           </p>
           <p className="text-blue-200 text-lg mb-10">
-            While we support Board exams, our{" "}
-            <strong className="text-white">primary focus remains competitive exam preparation</strong>, as it plays a
-            crucial role in securing top colleges and career opportunities.
+            While we support Board exams, our <strong className="text-white">primary focus remains competitive exam preparation</strong>, as it plays a crucial role in securing top colleges and career opportunities.
           </p>
 
           {/* Final Thought */}
@@ -350,10 +332,11 @@ export function IntegratedCoachingSection() {
               <Lightbulb className="w-6 h-6 text-yellow-300" />
               <h4 className="text-xl font-bold text-yellow-200">Final Thought</h4>
             </div>
-            <p className="text-blue-100 text-lg leading-relaxed">Choosing the right system in Std. XI is crucial.</p>
+            <p className="text-blue-100 text-lg leading-relaxed">
+              Choosing the right system in Std. XI is crucial.
+            </p>
             <p className="text-white font-semibold text-lg mt-3">
-              The right guidance + early preparation + consistent effort can make a significant difference in your
-              child's future.
+              The right guidance + early preparation + consistent effort can make a significant difference in your child's future.
             </p>
           </div>
           <div className="mt-10">
