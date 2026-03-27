@@ -144,35 +144,53 @@ export function IntegratedCoachingSection() {
       </section>
 
       {/* Section 4: Important Clarification for Parents */}
-      <section className="py-14 px-4 bg-amber-50/70">
+      <section className="py-14 px-4 bg-gradient-to-br from-amber-50 via-orange-50 to-red-50">
         <div className="container mx-auto max-w-4xl">
-          <div className="flex items-center justify-center gap-3 mb-8">
-            <div className="w-10 h-10 rounded-full bg-amber-100 flex items-center justify-center">
-              <AlertCircle className="w-5 h-5 text-amber-600" />
+          <div className="flex items-center justify-center gap-3 mb-10">
+            <div className="w-12 h-12 rounded-full bg-gradient-to-br from-amber-400 to-orange-500 flex items-center justify-center shadow-lg">
+              <AlertCircle className="w-6 h-6 text-white" />
             </div>
             <h3 className="text-2xl md:text-3xl font-bold text-blue-900">Important Clarification for Parents</h3>
           </div>
-          <Card className="border border-amber-200 shadow-md">
-            <CardContent className="p-8 space-y-5">
-              <p className="text-gray-700 text-lg leading-relaxed">
+
+          <Card className="border-0 shadow-xl overflow-hidden">
+            <div className="bg-gradient-to-r from-amber-500 to-orange-500 p-4">
+              <p className="text-white text-lg font-semibold text-center">
+                ⚠️ Please read this carefully before enrolling your child
+              </p>
+            </div>
+            <CardContent className="p-8 space-y-6">
+              <p className="text-gray-700 text-lg leading-relaxed text-center">
                 Many coaching institutes claim that their NEET/JEE courses automatically cover Board preparation.
               </p>
-              <div className="bg-blue-50 border border-blue-200 rounded-xl p-5">
-                <div>
-                  <CheckCircle className="w-4 h-4 text-green-500 flex-shrink-0" />
-                  <p className="text-gray-800 font-medium text-lg">
-                    <strong>Independent effort from students is essential</strong> to score well in Board exams.
-                  </p>
+
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <div className="bg-gradient-to-br from-red-50 to-orange-50 border border-red-200 rounded-xl p-5 flex items-start gap-3">
+                  <div className="w-8 h-8 rounded-full bg-red-100 flex items-center justify-center flex-shrink-0 mt-0.5">
+                    <XCircle className="w-5 h-5 text-red-500" />
+                  </div>
+                  <div>
+                    <p className="text-red-800 font-semibold mb-1">The Reality</p>
+                    <p className="text-gray-700 text-sm leading-relaxed">
+                      <strong>Independent effort from students is essential</strong> to score well in Board exams. Coaching alone is not enough.
+                    </p>
+                  </div>
                 </div>
-                <div>
-                  <CheckCircle className="w-4 h-4 text-green-500 flex-shrink-0" />
-                  <p className="text-blue-900 text-lg leading-relaxed">
-                    Board and Entrance preparation require <strong>different teaching styles and focus</strong>, which
-                    ideally need separate planning and attention.
-                  </p>
+                <div className="bg-gradient-to-br from-blue-50 to-indigo-50 border border-blue-200 rounded-xl p-5 flex items-start gap-3">
+                  <div className="w-8 h-8 rounded-full bg-blue-100 flex items-center justify-center flex-shrink-0 mt-0.5">
+                    <Lightbulb className="w-5 h-5 text-blue-500" />
+                  </div>
+                  <div>
+                    <p className="text-blue-800 font-semibold mb-1">Key Difference</p>
+                    <p className="text-gray-700 text-sm leading-relaxed">
+                      Board and Entrance preparation require <strong>different teaching styles and focus</strong>, which ideally need separate planning.
+                    </p>
+                  </div>
                 </div>
               </div>
-              <div className="pt-4 text-center">
+
+              <div className="bg-gradient-to-r from-blue-900 to-indigo-900 rounded-xl p-6 text-center">
+                <p className="text-blue-100 text-sm mb-3">We believe in transparency — parents deserve to know the full picture.</p>
                 <CTAButton>Understand Our Teaching Approach</CTAButton>
               </div>
             </CardContent>
