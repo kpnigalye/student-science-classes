@@ -162,44 +162,8 @@ export default function JeeExam() {
                 </div>
               </CardHeader>
               <CardContent className="pt-6">
-                <ul className="space-y-4">
-                  <li>
-                    <p className="font-medium">Age Limit:</p>
-                    <p className="text-gray-700">No age restriction.</p>
-                  </li>
-                  <li>
-                    <p className="font-medium">Qualifying Exam Year:</p>
-                    <p className="text-gray-700">Passed Class 12 in 2023, 2024, or appearing in 2025.</p>
-                  </li>
-                  <li>
-                    <p className="font-medium">Number of Attempts:</p>
-                    <p className="text-gray-700">Maximum 3 consecutive years from passing Class 12.</p>
-                  </li>
-                  <li>
-                    <p className="font-medium">Educational Qualification:</p>
-                    <p className="text-gray-700">Passed Class 12 with five subjects.</p>
-                  </li>
-                  <li>
-                    <p className="font-medium">Required Subjects:</p>
-                    <ul className="list-disc list-inside pl-4 text-gray-700 space-y-2">
-                      <li>For B.E./B.Tech: Physics, Mathematics + one of Chemistry/Biology/Biotechnology/Technical Vocational.</li>
-                      <li>For B.Arch: Physics, Chemistry, Mathematics.</li>
-                      <li>For B.Plan: Mathematics.</li>
-                    </ul>
-                  </li>
-                  <li>
-                    <p className="font-medium">Minimum Marks for Admission:</p>
-                    <p className="text-gray-700">75% for General/OBC, 65% for SC/ST (for admission in NITs, IIITs, GFTIs).</p>
-                  </li>
-                  <li>
-                    <p className="font-medium">State of Eligibility:</p>
-                    <p className="text-gray-700">Based on the state of Class 12 board.</p>
-                  </li>
-                  <li>
-                    <p className="font-medium">Nationality:</p>
-                    <p className="text-gray-700">Indian citizens, NRIs, OCIs, PIOs, and foreign nationals eligible</p>
-                  </li>
-                </ul>
+                <p className="text-gray-700 mb-4">XII Science with PCM (Physics, Chemistry, Maths)</p>
+                <p className="text-gray-700">There is no minimum percentage required to appear for JEE Main 2026. Students who have passed or are appearing in Class 12 from a recognised board can apply.</p>
               </CardContent>
             </Card>
 

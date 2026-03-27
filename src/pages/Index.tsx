@@ -142,20 +142,20 @@ export default function Index() {
                     <p className="text-gray-600">{course.description}</p>
                     <div className="space-y-3 text-sm">
                       <p className="flex items-start gap-2">
-                        <Clock className="w-4 h-4 text-blue-600 mt-1 flex-shrink-0" />
-                        <span>
-                          {course.timing.split('\n').map((time, i) => (
-                            <span key={i} className="block">{time}</span>
-                          ))}
-                        </span>
-                      </p>
-                      <p className="flex items-start gap-2">
                         <BookOpen className="w-4 h-4 text-blue-600 mt-1 flex-shrink-0" />
-                        <span>{course.subjects}</span>
+                        <span><strong>Subjects:</strong> {course.subjects}</span>
                       </p>
                       <p className="flex items-start gap-2">
                         <Target className="w-4 h-4 text-blue-600 mt-1 flex-shrink-0" />
-                        <span>Duration: {course.duration}</span>
+                        <span><strong>Course Plan:</strong> {course.coursePlan}</span>
+                      </p>
+                      <p className="flex items-start gap-2">
+                        <Clock className="w-4 h-4 text-blue-600 mt-1 flex-shrink-0" />
+                        <span><strong>Duration:</strong> {course.duration}</span>
+                      </p>
+                      <p className="flex items-start gap-2">
+                        <Clock className="w-4 h-4 text-blue-600 mt-1 flex-shrink-0" />
+                        <span><strong>Lecture Duration:</strong> {course.lectureDuration}</span>
                       </p>
                     </div>
                   </div>

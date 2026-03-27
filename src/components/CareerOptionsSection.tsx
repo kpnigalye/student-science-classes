@@ -46,7 +46,7 @@ export function CareerOptionsSection() {
       <div className="container mx-auto">
         <h2 className="text-3xl font-bold text-center mb-10 text-blue-900">Career Options after XI + XII (Plain Science)</h2>
         
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 items-stretch">
           <Card className="border border-blue-100 bg-white hover:shadow-lg transition-all duration-300">
             <CardHeader className="bg-gradient-to-r from-blue-50 to-indigo-50">
               <div className="flex items-center gap-3">
