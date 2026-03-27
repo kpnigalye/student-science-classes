@@ -38,8 +38,20 @@ export default function JeeExam() {
         <div className="max-w-4xl mx-auto space-y-10">
           <div className="text-center">
             <h1 className="text-3xl md:text-4xl font-bold text-blue-900 mb-4">Joint Entrance Examination (JEE)</h1>
-            <p className="text-gray-600 max-w-2xl mx-auto">
-              The Joint Entrance Examination (JEE) is an engineering entrance assessment conducted for admission to various engineering colleges in India.
+            <p className="text-gray-600 max-w-3xl mx-auto">
+              A national-level engineering entrance exam for admissions to IITs, NITs, IIITs, and reputed engineering colleges across India.
+            </p>
+            <p className="text-gray-600 max-w-3xl mx-auto mt-3">
+              Objective of JEE-Mains is to categorise candidates suitable for sitting in JEE (Advanced) or gaining admission to a Bachelor of Engineering (BE) or Bachelor of Technology (BTech) undergraduate programme at one of the following types of institutions:
+            </p>
+            <ul className="text-gray-600 max-w-3xl mx-auto mt-2 text-left list-disc list-inside space-y-1">
+              <li>National Institutes of Technology (NITs)</li>
+              <li>Indian Institutes of Information Technology (IIITs)</li>
+              <li>Other Centrally Funded Technical Institutions (CFTIs)</li>
+              <li>State-funded or -recognised institutions and universities</li>
+            </ul>
+            <p className="text-gray-600 max-w-3xl mx-auto mt-3">
+              The JEE Advanced is similar to JEE-Main, but its questions are more thorough. Passage of the exam qualifies you for admittance to prestigious IITs.
             </p>
           </div>
 
