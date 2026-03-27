@@ -84,9 +84,6 @@ export default function Index() {
               Celebrating 45th Year
             </span>
           </h1>
-          <p className="text-xl md:text-2xl font-light text-blue-200 tracking-wide">
-            of Excellence in Science Education
-          </p>
         </div>
       </section>
 
