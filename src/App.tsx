@@ -9,6 +9,8 @@ import NotFound from "./pages/NotFound";
 import NeetExam from "./pages/NeetExam";
 import JeeExam from "./pages/JeeExam";
 import CetExam from "./pages/CetExam";
+import Science from "./pages/Science";
+import CareerOptions from "./pages/CareerOptions";
 import { ScrollToTop } from "./components/ScrollToTop";
 import { WhatsAppChat } from "./components/WhatsAppChat";
 import { ScrollToTopOnNavigation } from "./components/ScrollToTopOnNavigation";
