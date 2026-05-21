@@ -11,6 +11,7 @@ import JeeExam from "./pages/JeeExam";
 import CetExam from "./pages/CetExam";
 import Science from "./pages/Science";
 import CareerOptions from "./pages/CareerOptions";
+import XIAdmissions from "./pages/XIAdmissions";
 import { ScrollToTop } from "./components/ScrollToTop";
 import { WhatsAppChat } from "./components/WhatsAppChat";
 import { ScrollToTopOnNavigation } from "./components/ScrollToTopOnNavigation";
@@ -29,6 +30,7 @@ const App = () => (
           <Route path="/" element={<Index />} />
           <Route path="/science" element={<Science />} />
           <Route path="/career-options" element={<CareerOptions />} />
+          <Route path="/xi-admissions" element={<XIAdmissions />} />
           <Route path="/neet" element={<NeetExam />} />
           <Route path="/jee" element={<JeeExam />} />
           <Route path="/cet" element={<CetExam />} />
