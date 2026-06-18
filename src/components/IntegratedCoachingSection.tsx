@@ -41,7 +41,7 @@ export function IntegratedCoachingSection() {
         </div>
         <div className="container mx-auto max-w-4xl relative z-10">
           <h2 className="text-2xl md:text-3xl font-bold text-center mb-8">
-            Why Integrated Batches is the need of the hour?
+            Why Students Need a Combined Learning Program for XI-XII & Entrance Today?
           </h2>
           <div className="space-y-6 text-blue-100 text-lg leading-relaxed">
             <p>
@@ -64,7 +64,7 @@ export function IntegratedCoachingSection() {
             <div className="w-10 h-10 rounded-full bg-blue-100 flex items-center justify-center">
               <Target className="w-5 h-5 text-blue-600" />
             </div>
-            <h3 className="text-2xl md:text-3xl font-bold text-blue-900">Why Integrated Preparation is Necessary?</h3>
+            <h3 className="text-2xl md:text-3xl font-bold text-blue-900">Why Combined Preparation is Necessary?</h3>
           </div>
           <Card className="border-0 shadow-lg">
             <CardContent className="p-8">
@@ -74,7 +74,7 @@ export function IntegratedCoachingSection() {
                 and increased stress during Std. XII.
               </p>
               <p className="text-gray-700 mb-6 text-lg leading-relaxed">
-                Integrated batches are designed to solve these challenges by combining Board syllabus preparation and
+                Our program is designed to solve these challenges by combining Board syllabus preparation and
                 Entrance exam preparation into a single, well-structured system. Along with this, students benefit from
                 regular testing and revision, ensuring consistent progress and better understanding throughout the
                 academic journey.
@@ -257,7 +257,7 @@ export function IntegratedCoachingSection() {
             </Card>
           </div>
           <div className="text-center">
-            <CTAButton>Enroll for Integrated Batch</CTAButton>
+            <CTAButton>Enrol for our Combined Program</CTAButton>
           </div>
         </div>
       </section>
