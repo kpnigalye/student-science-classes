@@ -3,7 +3,6 @@ import ComingSoonPage from "@/components/ComingSoonPage";
 export default function CommerceArts() {
   return (
     <ComingSoonPage
-      eyebrow="Launching Soon"
       title="XI – XII Commerce & Arts"
       subtitle="Structured junior college coaching for Commerce and Arts students, with the same discipline, mentoring and test rigour as our Science programme."
       highlights={[

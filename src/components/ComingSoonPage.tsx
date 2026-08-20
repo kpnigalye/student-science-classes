@@ -3,7 +3,6 @@ import { CheckCircle2, MessageCircle } from "lucide-react";
 import Logo from "@/components/Logo";
 
 interface ComingSoonPageProps {
-  eyebrow: string;
   title: string;
   subtitle: string;
   highlights: string[];
@@ -13,7 +12,6 @@ interface ComingSoonPageProps {
 }
 
 export const ComingSoonPage = ({
-  eyebrow,
   title,
   subtitle,
   highlights,
