@@ -17,7 +17,7 @@ export default function CetExam() {
         <meta property="og:description" content="MHT-CET exam guide for engineering and pharmacy aspirants in Maharashtra." />
         <meta property="og:url" content="https://studentsclasses.in/cet" />
       </Helmet>
-      <header className="py-6 px-4 bg-white shadow-sm">
+      <header className="sticky top-0 z-40 border-b border-border/70 bg-background/90 px-4 py-3 backdrop-blur">
         <div className="container mx-auto">
           <Logo />
           <Breadcrumb className="mt-4">

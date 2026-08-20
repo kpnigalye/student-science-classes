@@ -73,7 +73,7 @@ export default function Science() {
         <meta property="og:description" content="XI-XII Science integrated batches for NEET, JEE, MHT-CET and State Board." />
         <meta property="og:url" content="https://studentsclasses.in/science" />
       </Helmet>
-      <header className="py-6 px-4 bg-white shadow-sm">
+      <header className="sticky top-0 z-40 border-b border-border/70 bg-background/90 px-4 py-3 backdrop-blur">
         <Logo />
       </header>
 

@@ -26,7 +26,7 @@ export default function JeeExam() {
         <meta property="og:description" content="JEE Mains and Advanced guide with exam pattern, eligibility, career opportunities, and top IITs in India." />
         <meta property="og:url" content="https://studentsclasses.in/jee" />
       </Helmet>
-      <header className="py-6 px-4 bg-white shadow-sm">
+      <header className="sticky top-0 z-40 border-b border-border/70 bg-background/90 px-4 py-3 backdrop-blur">
         <div className="container mx-auto">
           <Logo />
           <Breadcrumb className="mt-4">

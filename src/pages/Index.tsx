@@ -38,7 +38,7 @@ export default function Index() {
         <meta property="og:description" content="Expert coaching for School and College section in Chembur, Mumbai. Celebrating 45 years of excellence in education." />
         <meta property="og:url" content="https://studentsclasses.in/" />
       </Helmet>
-      <header className="py-6 px-4 bg-white shadow-sm">
+      <header className="sticky top-0 z-40 border-b border-border/70 bg-background/90 px-4 py-3 backdrop-blur">
         <Logo />
       </header>
 

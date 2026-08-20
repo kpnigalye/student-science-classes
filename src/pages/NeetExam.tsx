@@ -16,7 +16,7 @@ export default function NeetExam() {
         <meta property="og:description" content="Complete NEET exam guide covering pattern, eligibility, percentile, career options and top medical colleges." />
         <meta property="og:url" content="https://studentsclasses.in/neet" />
       </Helmet>
-      <header className="py-6 px-4 bg-white shadow-sm">
+      <header className="sticky top-0 z-40 border-b border-border/70 bg-background/90 px-4 py-3 backdrop-blur">
         <div className="container mx-auto">
           <Logo />
           <Breadcrumb className="mt-4">
