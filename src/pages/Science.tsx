@@ -12,7 +12,7 @@ export default function Science() {
       subjects: "Physics, Chemistry, Biology / Maths (NCERT + State board)",
       coursePlan: "Foundation + Concept clarity + Classroom practice + Test series + Doubt solving",
       duration: "24 months",
-      lectureDuration: "7-8 Hours Daily (Integrated batch) & 4-5 hours daily (Regular batch)",
+      lectureDuration: "4-5 hours daily (Regular batch). Extra lectures on Sundays and Holidays.",
     },
     {
       title: "XI + XII + MHT-CET",
@@ -20,7 +20,7 @@ export default function Science() {
       subjects: "Physics, Chemistry, Biology, Maths (State board)",
       coursePlan: "Foundation + Concept clarity + Classroom practice + Test series + Doubt solving",
       duration: "24 months",
-      lectureDuration: "4-5 hours daily (Regular batch)",
+      lectureDuration: "4-5 hours daily (Regular batch). Extra lectures on Sundays and Holidays.",
     },
     {
       title: "XI + XII State Board",
