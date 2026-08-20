@@ -1,3 +1,4 @@
+import { Helmet } from "react-helmet-async";
 import Logo from "@/components/Logo";
 import { Link } from "react-router-dom";
 import { ArrowRight } from "lucide-react";
@@ -6,6 +7,14 @@ import { CareerOptionsSection } from "@/components/CareerOptionsSection";
 export default function CareerOptions() {
   return (
     <div className="min-h-screen bg-gradient-to-b from-slate-50 to-white">
+      <Helmet>
+        <title>Career Options after XII - Students' Classes</title>
+        <meta name="description" content="Explore PCM and PCB career paths after XII including engineering, medicine, pharmacy, research, agriculture, and professional courses." />
+        <link rel="canonical" href="https://studentsclasses.in/career-options" />
+        <meta property="og:title" content="Career Options after XII - Students' Classes" />
+        <meta property="og:description" content="Explore PCM and PCB career paths after XII including engineering, medicine, pharmacy, and research." />
+        <meta property="og:url" content="https://studentsclasses.in/career-options" />
+      </Helmet>
       <header className="py-6 px-4 bg-white shadow-sm">
         <Logo />
       </header>

@@ -1,3 +1,4 @@
+import { Helmet } from "react-helmet-async";
 import { BookOpen, Target, Clock, GraduationCap, ArrowRight } from "lucide-react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import Logo from "@/components/Logo";
@@ -64,6 +65,14 @@ export default function Science() {
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-slate-50 to-white">
+      <Helmet>
+        <title>Science Coaching and Integrated Batches - Students' Classes</title>
+        <meta name="description" content="XI-XII Science integrated batches for NEET, JEE, MHT-CET and State Board. Explore structured coaching, experienced faculty, and entrance exam preparation." />
+        <link rel="canonical" href="https://studentsclasses.in/science" />
+        <meta property="og:title" content="Science Coaching and Integrated Batches - Students' Classes" />
+        <meta property="og:description" content="XI-XII Science integrated batches for NEET, JEE, MHT-CET and State Board." />
+        <meta property="og:url" content="https://studentsclasses.in/science" />
+      </Helmet>
       <header className="py-6 px-4 bg-white shadow-sm">
         <Logo />
       </header>

@@ -1,3 +1,4 @@
+import { Helmet } from "react-helmet-async";
 
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import Logo from "@/components/Logo";
@@ -8,6 +9,14 @@ import { Breadcrumb, BreadcrumbItem, BreadcrumbLink, BreadcrumbList, BreadcrumbS
 export default function CetExam() {
   return (
     <div className="min-h-screen bg-gradient-to-b from-[#f8f9fa] to-white">
+      <Helmet>
+        <title>MHT-CET Preparation Guide - Students' Classes</title>
+        <meta name="description" content="MHT-CET exam guide for engineering and pharmacy aspirants in Maharashtra. Covers pattern, eligibility, percentile, and career options." />
+        <link rel="canonical" href="https://studentsclasses.in/cet" />
+        <meta property="og:title" content="MHT-CET Preparation Guide - Students' Classes" />
+        <meta property="og:description" content="MHT-CET exam guide for engineering and pharmacy aspirants in Maharashtra." />
+        <meta property="og:url" content="https://studentsclasses.in/cet" />
+      </Helmet>
       <header className="py-6 px-4 bg-white shadow-sm">
         <div className="container mx-auto">
           <Logo />
