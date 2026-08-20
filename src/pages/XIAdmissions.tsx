@@ -406,12 +406,17 @@ export default function XIAdmissions() {
           <p className="text-blue-200 mb-6 max-w-2xl mx-auto">
             Get personal guidance from our team and start XI with clarity, discipline, and a proven strategy.
           </p>
-          <Link
-            to="/"
+          <a
+            href="https://wa.me/918097740318?text=Hi%2C%20I%20would%20like%20to%20book%20a%20free%20counselling%20session%20for%20XI%20Science%20admissions."
+            target="_blank"
+            rel="noopener noreferrer"
             className="inline-flex items-center gap-2 bg-yellow-400 text-blue-950 hover:bg-yellow-300 font-semibold px-6 py-3 rounded-full transition-colors"
           >
-            Book a Free Counselling Session <ArrowRight className="w-4 h-4" />
-          </Link>
+            Book a Free Counselling Session on WhatsApp <ArrowRight className="w-4 h-4" />
+          </a>
+          <p className="text-blue-200 text-sm mt-4">
+            Prefer to call? <a href="tel:+918097740318" className="underline hover:text-white">+91 80977 40318</a>
+          </p>
         </div>
       </section>
     </div>
