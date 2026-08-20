@@ -61,12 +61,12 @@ export default function Index() {
               Celebrating 45 years of Excellence!
             </p>
             <div className="mt-8 flex flex-col gap-3 sm:flex-row">
-              <Link
-                to="/science"
+              <a
+                href="#courses"
                 className="inline-flex min-h-12 items-center justify-center gap-2 rounded-full bg-gradient-gold px-7 text-sm font-semibold text-navy-deep transition-transform hover:scale-[1.02]"
               >
                 Explore Our Batches <ArrowRight className="h-4 w-4" />
-              </Link>
+              </a>
               <a
                 href="https://wa.me/918097740318"
                 target="_blank"
@@ -93,7 +93,7 @@ export default function Index() {
       </section>
 
       {/* Our Courses - Category Selection */}
-      <section className="px-4 py-20">
+      <section id="courses" className="px-4 py-20">
         <div className="container mx-auto">
           <div className="mb-10 max-w-2xl">
             <p className="text-xs font-semibold uppercase tracking-[0.2em] text-steel">Our Courses</p>

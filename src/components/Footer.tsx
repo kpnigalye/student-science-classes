@@ -67,6 +67,10 @@ export const Footer = () => {
               <MapPin className="mt-0.5 h-4 w-4 shrink-0 text-gold" />
               First floor, Rajshri building, N. G. Acharya Marg, Near Royal Orchid hotel, Chembur (E), Mumbai - 400071
             </li>
+            <li className="flex items-start gap-2">
+              <MapPin className="mt-0.5 h-4 w-4 shrink-0 text-gold" />
+              First Floor, Raikar Chambers, Opp Neelkanth Gardens, Govandi (E), Mumbai - 400088
+            </li>
           </ul>
         </div>
       </div>
