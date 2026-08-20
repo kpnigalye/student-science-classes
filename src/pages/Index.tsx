@@ -57,9 +57,12 @@ export default function Index() {
           </div>
           <h1 className="text-4xl md:text-5xl font-bold mb-3">
             <span className="bg-gradient-to-r from-yellow-200 via-yellow-300 to-amber-400 bg-clip-text text-transparent">
-              Celebrating 45th Year
+              Students' Classes – Expert Science Coaching in Chembur, Mumbai
             </span>
           </h1>
+          <p className="text-blue-100 text-lg md:text-xl max-w-2xl mx-auto">
+            Celebrating our 45th year of NEET, JEE, MHT-CET and XI–XII board coaching.
+          </p>
         </div>
       </section>
 
