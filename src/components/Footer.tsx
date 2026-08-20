@@ -76,8 +76,9 @@ export const Footer = () => {
       </div>
 
       <div className="border-t border-primary-foreground/15">
-        <div className="container mx-auto flex flex-col items-center justify-between gap-3 px-4 py-5 text-sm text-primary-foreground/60 sm:flex-row">
+        <div className="container mx-auto flex flex-col items-center justify-center gap-2 px-4 py-5 text-sm text-primary-foreground/60 sm:flex-row sm:gap-3">
           <p>© {new Date().getFullYear()} Students' Classes. All rights reserved.</p>
+          <span className="hidden sm:inline">•</span>
           <Link to="/privacy" className="transition-colors hover:text-primary-foreground">
             Privacy Policy
           </Link>
