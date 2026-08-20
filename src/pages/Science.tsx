@@ -64,7 +64,7 @@ export default function Science() {
   ];
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-slate-50 to-white">
+    <div className="min-h-screen bg-background">
       <Helmet>
         <title>Science Coaching and Integrated Batches - Students' Classes</title>
         <meta name="description" content="XI-XII Science integrated batches for NEET, JEE, MHT-CET and State Board. Explore structured coaching, experienced faculty, and entrance exam preparation." />
@@ -78,7 +78,7 @@ export default function Science() {
       </header>
 
       {/* Page Hero */}
-      <section className="py-12 px-4 bg-gradient-to-br from-blue-950 via-blue-900 to-indigo-900 text-white">
+      <section className="py-12 px-4 bg-gradient-hero text-primary-foreground">
         <div className="container mx-auto text-center">
           <div className="inline-flex items-center gap-2 mb-4">
             <Link to="/" className="text-blue-300 hover:text-white transition-colors text-sm">

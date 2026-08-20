@@ -206,7 +206,7 @@ const helps = [
 
 export default function XIAdmissions() {
   return (
-    <div className="min-h-screen bg-gradient-to-b from-slate-50 to-white">
+    <div className="min-h-screen bg-background">
       <Helmet>
         <title>XI Science Admissions - Students' Classes</title>
         <meta name="description" content="Avoid common XI Science admission mistakes. Get guidance on choosing colleges, coaching, and creating a balanced Board + Entrance exam strategy." />
@@ -220,7 +220,7 @@ export default function XIAdmissions() {
       </header>
 
       {/* Hero Banner */}
-      <section className="py-12 px-4 bg-gradient-to-br from-blue-950 via-blue-900 to-indigo-900 text-white">
+      <section className="py-12 px-4 bg-gradient-hero text-primary-foreground">
         <div className="container mx-auto text-center">
           <div className="inline-flex items-center gap-2 mb-4">
             <Link to="/" className="text-blue-300 hover:text-white transition-colors text-sm">

@@ -6,7 +6,7 @@ import { CareerOptionsSection } from "@/components/CareerOptionsSection";
 
 export default function CareerOptions() {
   return (
-    <div className="min-h-screen bg-gradient-to-b from-slate-50 to-white">
+    <div className="min-h-screen bg-background">
       <Helmet>
         <title>Career Options after XII - Students' Classes</title>
         <meta name="description" content="Explore PCM and PCB career paths after XII including engineering, medicine, pharmacy, research, agriculture, and professional courses." />
@@ -20,7 +20,7 @@ export default function CareerOptions() {
       </header>
 
       {/* Page Hero */}
-      <section className="py-12 px-4 bg-gradient-to-br from-blue-950 via-blue-900 to-indigo-900 text-white">
+      <section className="py-12 px-4 bg-gradient-hero text-primary-foreground">
         <div className="container mx-auto text-center">
           <div className="inline-flex items-center gap-2 mb-4">
             <Link to="/" className="text-blue-300 hover:text-white transition-colors text-sm">
