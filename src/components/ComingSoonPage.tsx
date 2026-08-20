@@ -38,10 +38,7 @@ export const ComingSoonPage = ({
 
       <section className="bg-gradient-hero px-4 py-20 text-primary-foreground">
         <div className="container mx-auto max-w-3xl text-center animate-fade-in">
-          <span className="inline-flex items-center gap-2 rounded-full border border-gold/40 bg-gold/10 px-4 py-1.5 text-xs font-semibold uppercase tracking-[0.18em] text-gold-soft">
-            <Clock className="h-3.5 w-3.5" /> {eyebrow}
-          </span>
-          <h1 className="mt-6 text-4xl font-bold md:text-5xl">{title}</h1>
+          <h1 className="text-4xl font-bold md:text-5xl">{title}</h1>
           <p className="mt-4 text-lg text-primary-foreground/75">{subtitle}</p>
         </div>
       </section>
