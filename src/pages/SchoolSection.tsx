@@ -3,7 +3,6 @@ import ComingSoonPage from "@/components/ComingSoonPage";
 export default function SchoolSection() {
   return (
     <ComingSoonPage
-      eyebrow="Launching Soon"
       title="IX – X (State Board)"
       subtitle="Foundation coaching for school students, built on the same 45-year teaching method that powers our XI–XII and entrance batches."
       highlights={[
