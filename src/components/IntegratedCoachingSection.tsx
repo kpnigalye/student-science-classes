@@ -34,7 +34,7 @@ export function IntegratedCoachingSection() {
   return (
     <div className="space-y-0">
       {/* Section 1: Why Integrated Batches */}
-      <section className="py-14 px-4 bg-gradient-to-br from-blue-950 via-blue-900 to-indigo-900 text-white relative overflow-hidden">
+      <section className="py-14 px-4 bg-gradient-hero text-primary-foreground relative overflow-hidden">
         <div className="absolute inset-0 opacity-5">
           <div className="absolute top-10 left-20 w-40 h-40 border border-white rounded-full" />
           <div className="absolute bottom-10 right-20 w-60 h-60 border border-white rounded-full" />

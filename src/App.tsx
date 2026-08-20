@@ -10,6 +10,8 @@ import NeetExam from "./pages/NeetExam";
 import JeeExam from "./pages/JeeExam";
 import CetExam from "./pages/CetExam";
 import Science from "./pages/Science";
+import SchoolSection from "./pages/SchoolSection";
+import CommerceArts from "./pages/CommerceArts";
 import CareerOptions from "./pages/CareerOptions";
 import XIAdmissions from "./pages/XIAdmissions";
 import Privacy from "./pages/Privacy";
@@ -30,6 +32,8 @@ const App = () => (
         <Routes>
           <Route path="/" element={<Index />} />
           <Route path="/science" element={<Science />} />
+          <Route path="/ix-x" element={<SchoolSection />} />
+          <Route path="/commerce-arts" element={<CommerceArts />} />
           <Route path="/career-options" element={<CareerOptions />} />
           <Route path="/xi-admissions" element={<XIAdmissions />} />
           <Route path="/neet" element={<NeetExam />} />

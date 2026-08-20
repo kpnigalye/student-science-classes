@@ -206,7 +206,7 @@ const helps = [
 
 export default function XIAdmissions() {
   return (
-    <div className="min-h-screen bg-gradient-to-b from-slate-50 to-white">
+    <div className="min-h-screen bg-background">
       <Helmet>
         <title>XI Science Admissions - Students' Classes</title>
         <meta name="description" content="Avoid common XI Science admission mistakes. Get guidance on choosing colleges, coaching, and creating a balanced Board + Entrance exam strategy." />
@@ -215,12 +215,12 @@ export default function XIAdmissions() {
         <meta property="og:description" content="Avoid common XI Science admission mistakes and get expert guidance for Board + Entrance exam strategy." />
         <meta property="og:url" content="https://studentsclasses.in/xi-admissions" />
       </Helmet>
-      <header className="py-6 px-4 bg-white shadow-sm">
+      <header className="sticky top-0 z-40 border-b border-border/70 bg-background/90 px-4 py-3 backdrop-blur">
         <Logo />
       </header>
 
       {/* Hero Banner */}
-      <section className="py-12 px-4 bg-gradient-to-br from-blue-950 via-blue-900 to-indigo-900 text-white">
+      <section className="py-12 px-4 bg-gradient-hero text-primary-foreground">
         <div className="container mx-auto text-center">
           <div className="inline-flex items-center gap-2 mb-4">
             <Link to="/" className="text-blue-300 hover:text-white transition-colors text-sm">

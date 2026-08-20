@@ -10,11 +10,10 @@ import {
   Palette,
   School,
   ArrowRight,
-  Lock,
   Star,
   GraduationCap,
+  MessageCircle,
 } from "lucide-react";
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import Logo from "@/components/Logo";
 import { Link } from "react-router-dom";
 
@@ -29,7 +28,7 @@ export default function Index() {
   ];
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-slate-50 to-white">
+    <div className="min-h-screen bg-background">
       <Helmet>
         <title>Students' Classes – Coaching institute in Mumbai Since 1981</title>
         <meta name="description" content="Expert coaching for IX-X State-CBSE board, XI-XII Science-Commerce-Arts, NEET, JEE & MHT-CET in Chembur, Mumbai. Celebrating 45 years of excellence in education." />
@@ -38,134 +37,162 @@ export default function Index() {
         <meta property="og:description" content="Expert coaching for School and College section in Chembur, Mumbai. Celebrating 45 years of excellence in education." />
         <meta property="og:url" content="https://studentsclasses.in/" />
       </Helmet>
-      <header className="py-6 px-4 bg-white shadow-sm">
+      <header className="sticky top-0 z-40 border-b border-border/70 bg-background/90 px-4 py-3 backdrop-blur">
         <Logo />
       </header>
 
       {/* Hero Banner */}
-      <section className="relative py-12 px-4 bg-gradient-to-br from-blue-950 via-blue-900 to-indigo-900 text-white overflow-hidden">
-        <div className="absolute inset-0 opacity-10">
-          <div className="absolute top-4 left-8 w-24 h-24 border-2 border-yellow-300 rounded-full" />
-          <div className="absolute bottom-4 right-12 w-32 h-32 border-2 border-yellow-300 rounded-full" />
-          <div className="absolute top-1/2 left-1/3 w-16 h-16 border border-yellow-300 rounded-full" />
+      <section className="relative overflow-hidden bg-gradient-hero px-4 py-20 text-primary-foreground md:py-28">
+        <div className="pointer-events-none absolute inset-0 opacity-[0.18]">
+          <div className="absolute -right-24 top-1/2 h-[26rem] w-[26rem] -translate-y-1/2 rounded-full border border-gold/50" />
+          <div className="absolute -right-10 top-1/2 h-[16rem] w-[16rem] -translate-y-1/2 rounded-full border border-gold/40" />
+          <div className="absolute -left-16 -top-16 h-64 w-64 rounded-full bg-steel/40 blur-3xl" />
         </div>
-        <div className="container mx-auto text-center relative z-10">
-          <div className="inline-flex items-center gap-2 bg-yellow-400/20 border border-yellow-400/40 rounded-full px-5 py-2 mb-5">
-            <Star className="w-4 h-4 text-yellow-300 fill-yellow-300" />
-            <span className="text-yellow-200 text-sm font-medium tracking-wide uppercase">Since 1981</span>
-            <Star className="w-4 h-4 text-yellow-300 fill-yellow-300" />
-          </div>
-          <h1 className="text-4xl md:text-5xl font-bold mb-3">
-            <span className="bg-gradient-to-r from-yellow-200 via-yellow-300 to-amber-400 bg-clip-text text-transparent">
-              Expert&nbsp;Teaching. Proven Results.
+        <div className="container relative z-10 mx-auto animate-fade-in">
+          <div className="max-w-3xl">
+            <span className="inline-flex items-center gap-2 rounded-full border border-gold/40 bg-gold/10 px-4 py-1.5 text-xs font-semibold uppercase tracking-[0.2em] text-gold-soft">
+              <Star className="h-3.5 w-3.5 fill-current" /> Since 1981
             </span>
-          </h1>
-          <p className="text-blue-100 text-lg md:text-xl max-w-2xl mx-auto">
-            Celebrating 45 years of Excellence!
-          </p>
-        </div>
-      </section>
-
-      {/* Why Choose Us */}
-      <section className="py-16 px-4 bg-gradient-to-b from-slate-50 to-white">
-        <div className="container mx-auto">
-          <h2 className="text-3xl font-bold text-center mb-3 text-blue-900">What sets Students' Classes apart?</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {whyChooseUs.map((item, index) => (
-              <div
-                key={index}
-                className="relative group bg-white rounded-2xl p-6 shadow-md hover:shadow-xl hover:-translate-y-1 transition-all duration-300 border border-blue-100/60 overflow-hidden"
+            <h1 className="mt-6 text-4xl font-bold leading-[1.08] md:text-6xl">
+              Expert&nbsp;Teaching.
+              <span className="block bg-gradient-gold bg-clip-text text-transparent">Proven Results.</span>
+            </h1>
+            <p className="mt-5 max-w-xl text-lg text-primary-foreground/75">
+              Celebrating 45 years of excellence — coaching for XI–XII Science, NEET, JEE and MHT-CET in Chembur, Mumbai.
+            </p>
+            <div className="mt-8 flex flex-col gap-3 sm:flex-row">
+              <Link
+                to="/science"
+                className="inline-flex min-h-12 items-center justify-center gap-2 rounded-full bg-gradient-gold px-7 text-sm font-semibold text-navy-deep transition-transform hover:scale-[1.02]"
               >
-                <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-blue-500 to-indigo-500 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-                <div className="w-14 h-14 rounded-2xl bg-gradient-to-br from-blue-100 to-indigo-100 flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300">
-                  <item.icon className="w-7 h-7 text-blue-600" />
+                Explore Science Batches <ArrowRight className="h-4 w-4" />
+              </Link>
+              <a
+                href="https://wa.me/918097740318"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex min-h-12 items-center justify-center gap-2 rounded-full border border-primary-foreground/30 px-7 text-sm font-semibold text-primary-foreground transition-colors hover:bg-primary-foreground/10"
+              >
+                <MessageCircle className="h-4 w-4" /> Talk to a Counsellor
+              </a>
+            </div>
+            <dl className="mt-12 grid max-w-lg grid-cols-3 gap-6 border-t border-primary-foreground/15 pt-6">
+              {[
+                { k: "45+", v: "Years of teaching" },
+                { k: "1981", v: "Established in Chembur" },
+                { k: "4", v: "Science batch tracks" },
+              ].map((s) => (
+                <div key={s.k}>
+                  <dt className="font-display text-2xl font-bold text-gold-soft md:text-3xl">{s.k}</dt>
+                  <dd className="mt-1 text-xs text-primary-foreground/65">{s.v}</dd>
                 </div>
-                <h3 className="text-lg font-bold text-blue-900 mb-2">{item.title}</h3>
-                <p className="text-gray-600 leading-relaxed">{item.description}</p>
-              </div>
-            ))}
+              ))}
+            </dl>
           </div>
         </div>
       </section>
 
       {/* Our Courses - Category Selection */}
-      <section className="py-14 px-4 bg-slate-50">
+      <section className="px-4 py-20">
         <div className="container mx-auto">
-          <h2 className="text-3xl font-bold text-center mb-3 text-blue-900">Our Courses</h2>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-4xl mx-auto">
-            {/* IX-X Coming Soon */}
-            <Card className="border border-gray-200 bg-gray-50 h-full opacity-75">
-              <CardHeader className="text-center pb-3">
-                <div className="w-14 h-14 rounded-2xl bg-gray-100 flex items-center justify-center mx-auto mb-3">
-                  <School className="w-7 h-7 text-gray-400" />
-                </div>
-                <CardTitle className="text-xl font-bold text-gray-500">IX – X</CardTitle>
-                <p className="text-sm text-gray-400">State / CBSE Board</p>
-              </CardHeader>
-              <CardContent className="text-center">
-                <div className="inline-flex items-center gap-1.5 bg-amber-100 border border-amber-200 text-amber-700 text-xs font-semibold px-3 py-1.5 rounded-full">
-                  <Lock className="w-3 h-3" />
-                  Coming Soon
-                </div>
-              </CardContent>
-            </Card>
-
-            {/* Science - Active */}
-            <Link to="/science" className="block group">
-              <Card className="border-2 border-blue-200 bg-white hover:shadow-xl hover:-translate-y-1 transition-all duration-300 h-full">
-                <CardHeader className="text-center pb-3">
-                  <div className="w-14 h-14 rounded-2xl bg-gradient-to-br from-blue-100 to-indigo-100 flex items-center justify-center mx-auto mb-3 group-hover:scale-110 transition-transform">
-                    <FlaskConical className="w-7 h-7 text-blue-600" />
-                  </div>
-                  <CardTitle className="text-xl font-bold text-blue-900">Science</CardTitle>
-                  <p className="text-sm text-gray-500">XI – XII Science Stream</p>
-                </CardHeader>
-                <CardContent className="text-center">
-                  <span className="inline-flex items-center gap-1.5 text-blue-600 text-sm font-semibold">
-                    Explore Courses <ArrowRight className="w-4 h-4" />
-                  </span>
-                </CardContent>
-              </Card>
-            </Link>
-
-            {/* Commerce & Arts Coming Soon */}
-            <Card className="border border-gray-200 bg-gray-50 h-full opacity-75">
-              <CardHeader className="text-center pb-3">
-                <div className="w-14 h-14 rounded-2xl bg-gray-100 flex items-center justify-center mx-auto mb-3">
-                  <Palette className="w-7 h-7 text-gray-400" />
-                </div>
-                <CardTitle className="text-xl font-bold text-gray-500">Commerce & Arts</CardTitle>
-                <p className="text-sm text-gray-400">XI – XII Commerce & Arts Stream</p>
-              </CardHeader>
-              <CardContent className="text-center">
-                <div className="inline-flex items-center gap-1.5 bg-amber-100 border border-amber-200 text-amber-700 text-xs font-semibold px-3 py-1.5 rounded-full">
-                  <Lock className="w-3 h-3" />
-                  Coming Soon
-                </div>
-              </CardContent>
-            </Card>
+          <div className="mb-10 max-w-2xl">
+            <p className="text-xs font-semibold uppercase tracking-[0.2em] text-steel">Our Courses</p>
+            <h2 className="mt-2 text-3xl font-bold text-primary md:text-4xl">Choose your stream</h2>
+            <p className="mt-3 text-muted-foreground">
+              Programmes built around board results first, with entrance preparation layered on top.
+            </p>
           </div>
 
-          {/* Career Options Link */}
-          <div className="mt-10 flex flex-col sm:flex-row gap-4 justify-center items-center">
-            <Link to="/career-options" className="group">
-              <Card className="border border-blue-100 bg-white hover:shadow-lg transition-all duration-300 px-8 py-4">
-                <div className="flex items-center gap-3">
-                  <GraduationCap className="w-6 h-6 text-blue-600" />
-                  <span className="text-lg font-semibold text-blue-900">Career Options after XII</span>
-                  <ArrowRight className="w-5 h-5 text-blue-600 group-hover:translate-x-1 transition-transform" />
+          <div className="grid gap-6 md:grid-cols-3">
+            {[
+              {
+                to: "/ix-x",
+                icon: School,
+                title: "IX – X",
+                sub: "State / CBSE Board",
+                cta: "Coming soon",
+                soon: true,
+              },
+              {
+                to: "/science",
+                icon: FlaskConical,
+                title: "Science",
+                sub: "XI – XII Science Stream",
+                cta: "Explore courses",
+                soon: false,
+              },
+              {
+                to: "/commerce-arts",
+                icon: Palette,
+                title: "Commerce & Arts",
+                sub: "XI – XII Commerce & Arts Stream",
+                cta: "Coming soon",
+                soon: true,
+              },
+            ].map((c) => (
+              <Link
+                key={c.to}
+                to={c.to}
+                className={`group relative flex flex-col overflow-hidden rounded-xl border p-7 shadow-card transition-all duration-300 hover:-translate-y-1 hover:shadow-lift ${
+                  c.soon ? "border-border bg-gradient-panel" : "border-navy/25 bg-card"
+                }`}
+              >
+                {!c.soon && <span className="absolute inset-x-0 top-0 h-1 bg-gradient-gold" />}
+                <span
+                  className={`flex h-14 w-14 items-center justify-center rounded-xl ${
+                    c.soon ? "bg-secondary text-steel" : "bg-navy text-primary-foreground"
+                  }`}
+                >
+                  <c.icon className="h-7 w-7" />
+                </span>
+                <h3 className="mt-5 text-2xl font-bold text-primary">{c.title}</h3>
+                <p className="mt-1 text-sm text-muted-foreground">{c.sub}</p>
+                <span className="mt-6 inline-flex items-center gap-1.5 text-sm font-semibold text-steel">
+                  {c.cta}
+                  <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
+                </span>
+              </Link>
+            ))}
+          </div>
+
+          <div className="mt-8 grid gap-4 sm:grid-cols-2">
+            {[
+              { to: "/career-options", icon: GraduationCap, label: "Career Options after XII" },
+              { to: "/xi-admissions", icon: School, label: "XI Admissions Guide" },
+            ].map((l) => (
+              <Link
+                key={l.to}
+                to={l.to}
+                className="group flex items-center justify-between gap-3 rounded-xl border border-border bg-card px-6 py-5 shadow-card transition-colors hover:border-navy/30"
+              >
+                <span className="flex items-center gap-3">
+                  <l.icon className="h-5 w-5 text-steel" />
+                  <span className="text-base font-semibold text-primary">{l.label}</span>
+                </span>
+                <ArrowRight className="h-5 w-5 text-steel transition-transform group-hover:translate-x-1" />
+              </Link>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Why Choose Us */}
+      <section className="border-y border-border bg-secondary/40 px-4 py-20">
+        <div className="container mx-auto">
+          <div className="mb-10 max-w-2xl">
+            <p className="text-xs font-semibold uppercase tracking-[0.2em] text-steel">Why Students' Classes</p>
+            <h2 className="mt-2 text-3xl font-bold text-primary md:text-4xl">What sets us apart</h2>
+          </div>
+          <div className="grid gap-px overflow-hidden rounded-xl border border-border bg-border sm:grid-cols-2 lg:grid-cols-3">
+            {whyChooseUs.map((item, index) => (
+              <div key={index} className="group bg-card p-7 transition-colors hover:bg-gradient-panel">
+                <div className="flex h-11 w-11 items-center justify-center rounded-lg bg-secondary text-navy transition-colors group-hover:bg-navy group-hover:text-primary-foreground">
+                  <item.icon className="h-5 w-5" />
                 </div>
-              </Card>
-            </Link>
-            <Link to="/xi-admissions" className="group">
-              <Card className="border border-blue-100 bg-white hover:shadow-lg transition-all duration-300 px-8 py-4">
-                <div className="flex items-center gap-3">
-                  <School className="w-6 h-6 text-blue-600" />
-                  <span className="text-lg font-semibold text-blue-900">XI Admissions</span>
-                  <ArrowRight className="w-5 h-5 text-blue-600 group-hover:translate-x-1 transition-transform" />
-                </div>
-              </Card>
-            </Link>
+                <h3 className="mt-5 text-lg font-bold text-primary">{item.title}</h3>
+                <p className="mt-2 text-sm leading-relaxed text-muted-foreground">{item.description}</p>
+              </div>
+            ))}
           </div>
         </div>
       </section>

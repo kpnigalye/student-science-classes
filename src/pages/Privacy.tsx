@@ -3,7 +3,7 @@ import { Shield, Mail, MapPin } from "lucide-react";
 
 export default function Privacy() {
   return (
-    <div className="min-h-screen bg-gradient-to-b from-slate-50 to-white">
+    <div className="min-h-screen bg-background">
       <Helmet>
         <title>Privacy Policy - Students' Classes</title>
         <meta name="description" content="Privacy policy for Students' Classes website. Information about data collection, cookies, third-party services, and contact details." />
@@ -12,7 +12,7 @@ export default function Privacy() {
         <meta property="og:description" content="Privacy policy for Students' Classes website." />
         <meta property="og:url" content="https://studentsclasses.in/privacy" />
       </Helmet>
-      <header className="py-6 px-4 bg-white shadow-sm">
+      <header className="sticky top-0 z-40 border-b border-border/70 bg-background/90 px-4 py-3 backdrop-blur">
         <div className="container mx-auto max-w-4xl">
           <a href="/" className="inline-flex items-center gap-2 text-blue-600 hover:text-blue-800 font-medium">
             ← Back to Home
