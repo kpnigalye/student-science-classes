@@ -1,6 +1,5 @@
 import { Helmet } from "react-helmet-async";
-import { Link } from "react-router-dom";
-import { ArrowRight, CheckCircle2, Clock, MessageCircle } from "lucide-react";
+import { CheckCircle2, Clock, MessageCircle } from "lucide-react";
 import Logo from "@/components/Logo";
 
 interface ComingSoonPageProps {
@@ -70,12 +69,6 @@ export const ComingSoonPage = ({
               >
                 <MessageCircle className="h-4 w-4" /> Enquire on WhatsApp
               </a>
-              <Link
-                to="/science"
-                className="inline-flex min-h-11 items-center justify-center gap-2 rounded-full border border-border px-6 text-sm font-semibold text-primary transition-colors hover:bg-secondary"
-              >
-                Explore Science batches <ArrowRight className="h-4 w-4" />
-              </Link>
             </div>
           </div>
         </div>
