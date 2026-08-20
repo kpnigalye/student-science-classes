@@ -1,3 +1,4 @@
+import { Helmet } from "react-helmet-async";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import Logo from "@/components/Logo";
 import { Link } from "react-router-dom";
@@ -7,6 +8,14 @@ import { Breadcrumb, BreadcrumbItem, BreadcrumbLink, BreadcrumbList, BreadcrumbS
 export default function NeetExam() {
   return (
     <div className="min-h-screen bg-gradient-to-b from-[#f8f9fa] to-white">
+      <Helmet>
+        <title>NEET Preparation Guide - Students' Classes</title>
+        <meta name="description" content="Complete NEET exam guide covering pattern, eligibility, qualifying percentile, career options based on rank, and top medical colleges in India." />
+        <link rel="canonical" href="https://studentsclasses.in/neet" />
+        <meta property="og:title" content="NEET Preparation Guide - Students' Classes" />
+        <meta property="og:description" content="Complete NEET exam guide covering pattern, eligibility, percentile, career options and top medical colleges." />
+        <meta property="og:url" content="https://studentsclasses.in/neet" />
+      </Helmet>
       <header className="py-6 px-4 bg-white shadow-sm">
         <div className="container mx-auto">
           <Logo />

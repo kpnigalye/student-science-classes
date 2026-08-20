@@ -1,3 +1,4 @@
+import { Helmet } from "react-helmet-async";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import Logo from "@/components/Logo";
 import { BookOpen, Award, Calculator, GraduationCap, Building, CheckSquare, Percent } from "lucide-react";
@@ -17,6 +18,14 @@ export default function JeeExam() {
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-[#f8f9fa] to-white">
+      <Helmet>
+        <title>JEE Preparation Guide - Students' Classes</title>
+        <meta name="description" content="JEE Mains and Advanced preparation guide with exam pattern, eligibility, qualifying percentile, career opportunities, and top IITs in India." />
+        <link rel="canonical" href="https://studentsclasses.in/jee" />
+        <meta property="og:title" content="JEE Preparation Guide - Students' Classes" />
+        <meta property="og:description" content="JEE Mains and Advanced guide with exam pattern, eligibility, career opportunities, and top IITs in India." />
+        <meta property="og:url" content="https://studentsclasses.in/jee" />
+      </Helmet>
       <header className="py-6 px-4 bg-white shadow-sm">
         <div className="container mx-auto">
           <Logo />

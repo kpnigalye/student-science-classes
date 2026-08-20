@@ -1,3 +1,4 @@
+import { Helmet } from "react-helmet-async";
 import Logo from "@/components/Logo";
 import { Link } from "react-router-dom";
 import { ArrowRight, AlertTriangle, CheckCircle2 } from "lucide-react";
@@ -206,6 +207,14 @@ const helps = [
 export default function XIAdmissions() {
   return (
     <div className="min-h-screen bg-gradient-to-b from-slate-50 to-white">
+      <Helmet>
+        <title>XI Science Admissions - Students' Classes</title>
+        <meta name="description" content="Avoid common XI Science admission mistakes. Get guidance on choosing colleges, coaching, and creating a balanced Board + Entrance exam strategy." />
+        <link rel="canonical" href="https://studentsclasses.in/xi-admissions" />
+        <meta property="og:title" content="XI Science Admissions - Students' Classes" />
+        <meta property="og:description" content="Avoid common XI Science admission mistakes and get expert guidance for Board + Entrance exam strategy." />
+        <meta property="og:url" content="https://studentsclasses.in/xi-admissions" />
+      </Helmet>
       <header className="py-6 px-4 bg-white shadow-sm">
         <Logo />
       </header>

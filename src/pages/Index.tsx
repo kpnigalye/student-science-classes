@@ -1,3 +1,4 @@
+import { Helmet } from "react-helmet-async";
 import {
   Users,
   Target,
@@ -29,6 +30,14 @@ export default function Index() {
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-slate-50 to-white">
+      <Helmet>
+        <title>Students' Classes – Coaching institute in Mumbai Since 1981</title>
+        <meta name="description" content="Expert coaching for IX-X State-CBSE board, XI-XII Science-Commerce-Arts, NEET, JEE & MHT-CET in Chembur, Mumbai. Celebrating 45 years of excellence in education." />
+        <link rel="canonical" href="https://studentsclasses.in/" />
+        <meta property="og:title" content="Students' Classes – Coaching institute in Mumbai Since 1981" />
+        <meta property="og:description" content="Expert coaching for School and College section in Chembur, Mumbai. Celebrating 45 years of excellence in education." />
+        <meta property="og:url" content="https://studentsclasses.in/" />
+      </Helmet>
       <header className="py-6 px-4 bg-white shadow-sm">
         <Logo />
       </header>
