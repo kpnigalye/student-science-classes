@@ -23,7 +23,7 @@ export const Footer = () => {
           <p className="text-xs font-semibold uppercase tracking-[0.2em] text-gold-soft">Since 1981</p>
           <h3 className="mt-2 text-xl font-bold">Students' Classes</h3>
           <p className="mt-3 text-sm leading-relaxed text-primary-foreground/70">
-            45 years of coaching for XI–XII Science, NEET, JEE and MHT-CET in Chembur, Mumbai.
+            Celebrating 45 years of Excellence!
           </p>
         </div>
 

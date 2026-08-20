@@ -58,14 +58,14 @@ export default function Index() {
               <span className="block bg-gradient-gold bg-clip-text text-transparent">Proven Results.</span>
             </h1>
             <p className="mt-5 max-w-xl text-lg text-primary-foreground/75">
-              Celebrating 45 years of excellence — coaching for XI–XII Science, NEET, JEE and MHT-CET in Chembur, Mumbai.
+              Celebrating 45 years of Excellence!
             </p>
             <div className="mt-8 flex flex-col gap-3 sm:flex-row">
               <Link
                 to="/science"
                 className="inline-flex min-h-12 items-center justify-center gap-2 rounded-full bg-gradient-gold px-7 text-sm font-semibold text-navy-deep transition-transform hover:scale-[1.02]"
               >
-                Explore Science Batches <ArrowRight className="h-4 w-4" />
+                Explore Our Batches <ArrowRight className="h-4 w-4" />
               </Link>
               <a
                 href="https://wa.me/918097740318"
@@ -79,8 +79,8 @@ export default function Index() {
             <dl className="mt-12 grid max-w-lg grid-cols-3 gap-6 border-t border-primary-foreground/15 pt-6">
               {[
                 { k: "45+", v: "Years of teaching" },
-                { k: "1981", v: "Established in Chembur" },
-                { k: "4", v: "Science batch tracks" },
+                { k: "95", v: "80+ students in SSC" },
+                { k: "30", v: "80+ students in HSC" },
               ].map((s) => (
                 <div key={s.k}>
                   <dt className="font-display text-2xl font-bold text-gold-soft md:text-3xl">{s.k}</dt>
@@ -109,7 +109,7 @@ export default function Index() {
                 to: "/ix-x",
                 icon: School,
                 title: "IX – X",
-                sub: "State / CBSE Board",
+                sub: "State Board",
                 cta: "Coming soon",
                 soon: true,
               },
@@ -117,7 +117,7 @@ export default function Index() {
                 to: "/science",
                 icon: FlaskConical,
                 title: "Science",
-                sub: "XI – XII Science Stream",
+                sub: "XI – XII with Entrance",
                 cta: "Explore courses",
                 soon: false,
               },
