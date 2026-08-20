@@ -1,6 +1,5 @@
 import { Helmet } from "react-helmet-async";
-import { Link } from "react-router-dom";
-import { ArrowRight, CheckCircle2, Clock, MessageCircle } from "lucide-react";
+import { CheckCircle2, Clock, MessageCircle } from "lucide-react";
 import Logo from "@/components/Logo";
 
 interface ComingSoonPageProps {
