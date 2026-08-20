@@ -55,17 +55,13 @@ export default function Index() {
             <span className="text-yellow-200 text-sm font-medium tracking-wide uppercase">Since 1981</span>
             <Star className="w-4 h-4 text-yellow-300 fill-yellow-300" />
           </div>
-          <h1 className="text-4xl md:text-5xl font-bold mb-3 flex flex-col gap-2">
+          <h1 className="text-4xl md:text-5xl font-bold mb-3">
             <span className="bg-gradient-to-r from-yellow-200 via-yellow-300 to-amber-400 bg-clip-text text-transparent">
-              Oldest & Best Coaching Institute Mumbai
-            </span>
-            <span className="text-2xl md:text-3xl bg-gradient-to-r from-blue-100 to-white bg-clip-text text-transparent opacity-90">
-              Decades of Experience. Proven Results.
+              Students' Classes – Expert Science Coaching in Chembur, Mumbai
             </span>
           </h1>
-          <p className="text-blue-100 text-lg md:text-xl max-w-2xl mx-auto flex flex-col gap-1">
-            <span>Celebrating 45th year of Excellence!</span>
-            <b className="text-yellow-300 font-semibold italic">A Legacy of Excellence in Education</b>
+          <p className="text-blue-100 text-lg md:text-xl max-w-2xl mx-auto">
+            Celebrating our 45th year of NEET, JEE, MHT-CET and XI–XII board coaching.
           </p>
         </div>
       </section>
