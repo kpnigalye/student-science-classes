@@ -9,7 +9,7 @@ export const Footer = () => {
         <p className="text-blue-200">📧 staff@studentsclasses.in</p>
         <p className="text-blue-200">📞 +91 8097740318 / +91 9136596326</p>
         <p className="text-blue-200">
-          🏢 First floor, Rajashri building, N.G. Acharya Road, Near Royal Orchid hotel, Chembur (E), Mumbai - 400071
+          🏢 First floor, Rajshri building, N. G. Acharya Marg, Near Royal Orchid hotel, Chembur (E), Mumbai - 400071
         </p>
         <div className="pt-4 mt-4 border-t border-blue-800 flex flex-col sm:flex-row justify-center items-center gap-4">
           <p className="text-blue-400 text-sm">© {new Date().getFullYear()} Students' Classes. All rights reserved.</p>
