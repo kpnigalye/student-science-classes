@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 export const Footer = () => {
   return (
@@ -10,8 +11,11 @@ export const Footer = () => {
         <p className="text-blue-200">
           🏢 First floor, Rajashri building, N.G. Acharya Road, Near Royal Orchid hotel, Chembur (E), Mumbai - 400071
         </p>
-        <div className="pt-4 mt-4 border-t border-blue-800">
+        <div className="pt-4 mt-4 border-t border-blue-800 flex flex-col sm:flex-row justify-center items-center gap-4">
           <p className="text-blue-400 text-sm">© {new Date().getFullYear()} Students' Classes. All rights reserved.</p>
+          <Link to="/privacy" className="text-blue-400 text-sm hover:text-white transition-colors">
+            Privacy Policy
+          </Link>
         </div>
       </div>
     </footer>
